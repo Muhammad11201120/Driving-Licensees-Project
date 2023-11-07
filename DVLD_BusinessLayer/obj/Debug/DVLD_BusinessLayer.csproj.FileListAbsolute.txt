@@ -1,0 +1,9 @@
+D:\Programing\c#\DVLD_PROJECT\DVLD_BusinessLayer\bin\Debug\DVLD_BusinessLayer.dll
+D:\Programing\c#\DVLD_PROJECT\DVLD_BusinessLayer\bin\Debug\DVLD_BusinessLayer.pdb
+D:\Programing\c#\DVLD_PROJECT\DVLD_BusinessLayer\bin\Debug\DVLD_DataAccessLayer.dll
+D:\Programing\c#\DVLD_PROJECT\DVLD_BusinessLayer\bin\Debug\DVLD_DataAccessLayer.pdb
+D:\Programing\c#\DVLD_PROJECT\DVLD_BusinessLayer\obj\Debug\DVLD_BusinessLayer.csproj.AssemblyReference.cache
+D:\Programing\c#\DVLD_PROJECT\DVLD_BusinessLayer\obj\Debug\DVLD_BusinessLayer.csproj.CoreCompileInputs.cache
+D:\Programing\c#\DVLD_PROJECT\DVLD_BusinessLayer\obj\Debug\DVLD_BusinessLayer.csproj.CopyComplete
+D:\Programing\c#\DVLD_PROJECT\DVLD_BusinessLayer\obj\Debug\DVLD_BusinessLayer.dll
+D:\Programing\c#\DVLD_PROJECT\DVLD_BusinessLayer\obj\Debug\DVLD_BusinessLayer.pdb
