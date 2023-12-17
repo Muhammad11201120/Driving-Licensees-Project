@@ -12,3 +12,6 @@ D:\Programing\c#\DVLD_PROJECT\DVLD\obj\Debug\DVLD.csproj.CoreCompileInputs.cache
 D:\Programing\c#\DVLD_PROJECT\DVLD\obj\Debug\DVLD.csproj.CopyComplete
 D:\Programing\c#\DVLD_PROJECT\DVLD\obj\Debug\DVLD.exe
 D:\Programing\c#\DVLD_PROJECT\DVLD\obj\Debug\DVLD.pdb
+D:\Programing\c#\DVLD_PROJECT\DVLD\obj\Debug\DVLD.Form1.resources
+D:\Programing\c#\DVLD_PROJECT\DVLD\obj\Debug\DVLD.frmAllPeople.resources
+D:\Programing\c#\DVLD_PROJECT\DVLD\obj\Debug\DVLD.frmAddEditPerson.resources
