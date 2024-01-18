@@ -41,7 +41,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="clsApplications.cs" />
+    <Compile Include="clsErrorsBuessnisLayer.cs" />
+    <Compile Include="clsLicensesClasses.cs" />
+    <Compile Include="clsApplicationTypes.cs" />
+    <Compile Include="clsCountries.cs" />
+    <Compile Include="clsGeneralSettings.cs" />
+    <Compile Include="clsLocalDrivingLicenseApplications.cs" />
+    <Compile Include="clsLocalDrivingLicenseApplications_View.cs" />
     <Compile Include="clsPeople.cs" />
+    <Compile Include="clsUsers.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
