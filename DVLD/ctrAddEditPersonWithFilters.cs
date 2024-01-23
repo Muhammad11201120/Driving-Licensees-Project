@@ -42,8 +42,8 @@ namespace DVLD
         public ctrAddEditPersonWithFilters()
         {
             InitializeComponent();
-            _image.male = "D:\\Programing\\c#\\DVLD_PROJECT\\Assets\\male.png";
-            _image.female = "D:\\Programing\\c#\\DVLD_PROJECT\\Assets\\female.png";
+            _image.male = "D:\\Programing\\c#\\DVLD_PROJECT\\Assets\\Male512.png";
+            _image.female = "D:\\Programing\\c#\\DVLD_PROJECT\\Assets\\Female512.png";
         }
 
         private bool findPerson()

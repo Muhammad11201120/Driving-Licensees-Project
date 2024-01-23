@@ -89,7 +89,7 @@
             this.menuStrip1.Location = new System.Drawing.Point( 0, 0 );
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
-            this.menuStrip1.Size = new System.Drawing.Size( 295, 622 );
+            this.menuStrip1.Size = new System.Drawing.Size( 287, 622 );
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -102,7 +102,7 @@
             this.pEOPLEToolStripMenuItem.Image = ( ( System.Drawing.Image ) ( resources.GetObject( "pEOPLEToolStripMenuItem.Image" ) ) );
             this.pEOPLEToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.pEOPLEToolStripMenuItem.Name = "pEOPLEToolStripMenuItem";
-            this.pEOPLEToolStripMenuItem.Size = new System.Drawing.Size( 282, 76 );
+            this.pEOPLEToolStripMenuItem.Size = new System.Drawing.Size( 274, 68 );
             this.pEOPLEToolStripMenuItem.Text = "PEOPLE";
             this.pEOPLEToolStripMenuItem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.pEOPLEToolStripMenuItem.Click += new System.EventHandler( this.pEOPLEToolStripMenuItem_Click );
@@ -115,7 +115,7 @@
             this.toolStripMenuItem1.Image = global::DVLD.Properties.Resources.users_group;
             this.toolStripMenuItem1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size( 282, 76 );
+            this.toolStripMenuItem1.Size = new System.Drawing.Size( 274, 76 );
             this.toolStripMenuItem1.Text = "USERS";
             this.toolStripMenuItem1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.toolStripMenuItem1.Click += new System.EventHandler( this.toolStripMenuItem1_Click );
@@ -131,47 +131,54 @@
             this.lOGOUTToolStripMenuItem} );
             this.toolStripMenuItem2.Font = new System.Drawing.Font( "Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ( ( byte ) ( 0 ) ) );
             this.toolStripMenuItem2.ForeColor = System.Drawing.Color.White;
-            this.toolStripMenuItem2.Image = global::DVLD.Properties.Resources.account_settings;
+            this.toolStripMenuItem2.Image = global::DVLD.Properties.Resources.account_settings_64;
             this.toolStripMenuItem2.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size( 282, 76 );
+            this.toolStripMenuItem2.Size = new System.Drawing.Size( 274, 68 );
             this.toolStripMenuItem2.Text = "ACCOUNT SETTINGS";
             this.toolStripMenuItem2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // mstrpAccountInfos
             // 
             this.mstrpAccountInfos.BackColor = System.Drawing.Color.FromArgb( ( ( int ) ( ( ( byte ) ( 24 ) ) ) ), ( ( int ) ( ( ( byte ) ( 30 ) ) ) ), ( ( int ) ( ( ( byte ) ( 54 ) ) ) ) );
-            this.mstrpAccountInfos.Font = new System.Drawing.Font( "Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ( ( byte ) ( 0 ) ) );
+            this.mstrpAccountInfos.Font = new System.Drawing.Font( "Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ( ( byte ) ( 0 ) ) );
             this.mstrpAccountInfos.ForeColor = System.Drawing.Color.FromArgb( ( ( int ) ( ( ( byte ) ( 24 ) ) ) ), ( ( int ) ( ( ( byte ) ( 30 ) ) ) ), ( ( int ) ( ( ( byte ) ( 54 ) ) ) ) );
+            this.mstrpAccountInfos.Image = global::DVLD.Properties.Resources.Notes_32;
+            this.mstrpAccountInfos.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.mstrpAccountInfos.Name = "mstrpAccountInfos";
-            this.mstrpAccountInfos.Size = new System.Drawing.Size( 286, 34 );
+            this.mstrpAccountInfos.Size = new System.Drawing.Size( 239, 38 );
             this.mstrpAccountInfos.Text = "ACCOUNT INFOS";
             this.mstrpAccountInfos.Click += new System.EventHandler( this.mstrpAccountInfos_Click );
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size( 283, 6 );
+            this.toolStripSeparator2.Size = new System.Drawing.Size( 236, 6 );
             // 
             // mstrpChangePassword
             // 
-            this.mstrpChangePassword.Font = new System.Drawing.Font( "Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ( ( byte ) ( 0 ) ) );
+            this.mstrpChangePassword.Font = new System.Drawing.Font( "Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ( ( byte ) ( 0 ) ) );
             this.mstrpChangePassword.ForeColor = System.Drawing.Color.FromArgb( ( ( int ) ( ( ( byte ) ( 24 ) ) ) ), ( ( int ) ( ( ( byte ) ( 30 ) ) ) ), ( ( int ) ( ( ( byte ) ( 54 ) ) ) ) );
+            this.mstrpChangePassword.Image = global::DVLD.Properties.Resources.Password_32;
+            this.mstrpChangePassword.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.mstrpChangePassword.Name = "mstrpChangePassword";
-            this.mstrpChangePassword.Size = new System.Drawing.Size( 286, 34 );
+            this.mstrpChangePassword.Size = new System.Drawing.Size( 239, 38 );
             this.mstrpChangePassword.Text = "CHANGE PASSWORD";
             this.mstrpChangePassword.Click += new System.EventHandler( this.mstrpChangePassword_Click );
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size( 283, 6 );
+            this.toolStripSeparator1.Size = new System.Drawing.Size( 236, 6 );
             // 
             // lOGOUTToolStripMenuItem
             // 
+            this.lOGOUTToolStripMenuItem.Font = new System.Drawing.Font( "Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ( ( byte ) ( 0 ) ) );
             this.lOGOUTToolStripMenuItem.ForeColor = System.Drawing.Color.IndianRed;
+            this.lOGOUTToolStripMenuItem.Image = global::DVLD.Properties.Resources.sign_out_32__2;
+            this.lOGOUTToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.lOGOUTToolStripMenuItem.Name = "lOGOUTToolStripMenuItem";
-            this.lOGOUTToolStripMenuItem.Size = new System.Drawing.Size( 286, 34 );
+            this.lOGOUTToolStripMenuItem.Size = new System.Drawing.Size( 239, 38 );
             this.lOGOUTToolStripMenuItem.Text = "LOG OUT";
             this.lOGOUTToolStripMenuItem.Click += new System.EventHandler( this.lOGOUTToolStripMenuItem_Click );
             // 
@@ -194,7 +201,7 @@
             this.tstrpManageApplications.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.tstrpManageApplications.Name = "tstrpManageApplications";
             this.tstrpManageApplications.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tstrpManageApplications.Size = new System.Drawing.Size( 282, 76 );
+            this.tstrpManageApplications.Size = new System.Drawing.Size( 274, 76 );
             this.tstrpManageApplications.Text = "APPLICATIONS";
             this.tstrpManageApplications.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.tstrpManageApplications.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal;
@@ -388,7 +395,7 @@
             this.dRIVERSToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.dRIVERSToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.dRIVERSToolStripMenuItem.Name = "dRIVERSToolStripMenuItem";
-            this.dRIVERSToolStripMenuItem.Size = new System.Drawing.Size( 282, 76 );
+            this.dRIVERSToolStripMenuItem.Size = new System.Drawing.Size( 274, 76 );
             this.dRIVERSToolStripMenuItem.Text = "DRIVERS";
             // 
             // btnClose
@@ -397,11 +404,14 @@
             this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnClose.Font = new System.Drawing.Font( "Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ( ( byte ) ( 0 ) ) );
             this.btnClose.ForeColor = System.Drawing.Color.White;
+            this.btnClose.Image = global::DVLD.Properties.Resources.cross_32;
+            this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnClose.Location = new System.Drawing.Point( 1104, 525 );
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size( 120, 40 );
             this.btnClose.TabIndex = 1;
             this.btnClose.Text = "CLOSE";
+            this.btnClose.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnClose.UseVisualStyleBackColor = false;
             this.btnClose.Click += new System.EventHandler( this.btnClose_Click );
             // 

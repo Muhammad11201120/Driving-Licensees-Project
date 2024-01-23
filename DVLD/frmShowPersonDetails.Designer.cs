@@ -91,23 +91,29 @@
             this.lblEditPerson.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblEditPerson.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEditPerson.ForeColor = System.Drawing.Color.White;
-            this.lblEditPerson.Location = new System.Drawing.Point(621, 46);
+            this.lblEditPerson.Image = global::DVLD.Properties.Resources.edit_32;
+            this.lblEditPerson.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblEditPerson.Location = new System.Drawing.Point(621, 49);
             this.lblEditPerson.Name = "lblEditPerson";
             this.lblEditPerson.Padding = new System.Windows.Forms.Padding(5);
             this.lblEditPerson.Size = new System.Drawing.Size(122, 31);
             this.lblEditPerson.TabIndex = 3;
             this.lblEditPerson.Text = "EDIT ACCOUNT";
+            this.lblEditPerson.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.lblEditPerson.Click += new System.EventHandler(this.lblEditPerson_Click);
             // 
             // btnClose
             // 
             this.btnClose.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClose.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
-            this.btnClose.Location = new System.Drawing.Point(626, 569);
+            this.btnClose.Image = global::DVLD.Properties.Resources.cross_32;
+            this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnClose.Location = new System.Drawing.Point(621, 569);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(117, 37);
+            this.btnClose.Size = new System.Drawing.Size(122, 31);
             this.btnClose.TabIndex = 4;
             this.btnClose.Text = "CLOSE";
+            this.btnClose.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 

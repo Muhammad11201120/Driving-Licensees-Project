@@ -28,22 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
             this.ctrShowPersonDetails1 = new DVLD.ctrShowPersonDetails();
             this.btnSave = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font( "Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ( ( byte ) ( 0 ) ) );
-            this.button1.ForeColor = System.Drawing.Color.FromArgb( ( ( int ) ( ( ( byte ) ( 0 ) ) ) ), ( ( int ) ( ( ( byte ) ( 117 ) ) ) ), ( ( int ) ( ( ( byte ) ( 214 ) ) ) ) );
-            this.button1.Location = new System.Drawing.Point( 243, 692 );
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size( 141, 41 );
-            this.button1.TabIndex = 62;
-            this.button1.Text = "CLOSE";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler( this.button1_Click );
             // 
             // ctrShowPersonDetails1
             // 
@@ -58,13 +46,31 @@
             // 
             this.btnSave.Font = new System.Drawing.Font( "Microsoft YaHei", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ( ( byte ) ( 0 ) ) );
             this.btnSave.ForeColor = System.Drawing.Color.FromArgb( ( ( int ) ( ( ( byte ) ( 0 ) ) ) ), ( ( int ) ( ( ( byte ) ( 117 ) ) ) ), ( ( int ) ( ( ( byte ) ( 214 ) ) ) ) );
-            this.btnSave.Location = new System.Drawing.Point( 458, 692 );
+            this.btnSave.Image = global::DVLD.Properties.Resources.Save_32;
+            this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSave.Location = new System.Drawing.Point( 457, 693 );
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size( 141, 41 );
+            this.btnSave.Size = new System.Drawing.Size( 123, 40 );
             this.btnSave.TabIndex = 64;
             this.btnSave.Text = "SAVE";
+            this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler( this.btnSave_Click );
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font( "Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ( ( byte ) ( 0 ) ) );
+            this.button1.ForeColor = System.Drawing.Color.FromArgb( ( ( int ) ( ( ( byte ) ( 0 ) ) ) ), ( ( int ) ( ( ( byte ) ( 117 ) ) ) ), ( ( int ) ( ( ( byte ) ( 214 ) ) ) ) );
+            this.button1.Image = global::DVLD.Properties.Resources.cross_32;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point( 272, 693 );
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size( 123, 40 );
+            this.button1.TabIndex = 62;
+            this.button1.Text = "CLOSE";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler( this.button1_Click );
             // 
             // frmAddEditPerson
             // 

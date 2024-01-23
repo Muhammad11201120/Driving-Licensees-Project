@@ -106,7 +106,7 @@
             // 
             // pbxPerson
             // 
-            this.pbxPerson.Image = global::DVLD.Properties.Resources.male;
+            this.pbxPerson.Image = global::DVLD.Properties.Resources.Male_512;
             this.pbxPerson.Location = new System.Drawing.Point(503, 419);
             this.pbxPerson.Name = "pbxPerson";
             this.pbxPerson.Size = new System.Drawing.Size(345, 238);

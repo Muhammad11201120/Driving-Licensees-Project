@@ -113,7 +113,5 @@ namespace DVLD
         {
             this.Close();
         }
-
-
     }
 }
