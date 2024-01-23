@@ -52,6 +52,12 @@
     <Compile Include="ctrAddEditPersonWithFilters.Designer.cs">
       <DependentUpon>ctrAddEditPersonWithFilters.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmAddEditNewLocalDrivingLicenseApplication.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddEditNewLocalDrivingLicenseApplication.Designer.cs">
+      <DependentUpon>frmAddEditNewLocalDrivingLicenseApplication.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmAddEditUserCredinitils.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +87,12 @@
     </Compile>
     <Compile Include="frmEditApplicationTypes.Designer.cs">
       <DependentUpon>frmEditApplicationTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLocalDrivingLicenseApplications.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLocalDrivingLicenseApplications.Designer.cs">
+      <DependentUpon>frmLocalDrivingLicenseApplications.cs</DependentUpon>
     </Compile>
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
@@ -155,6 +167,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmEditApplicationTypes.resx">
       <DependentUpon>frmEditApplicationTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLocalDrivingLicenseApplications.resx">
+      <DependentUpon>frmLocalDrivingLicenseApplications.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>

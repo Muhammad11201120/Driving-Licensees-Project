@@ -53,7 +53,7 @@
             // groupBox1
             // 
             groupBox1.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            groupBox1.BackColor = System.Drawing.Color.SteelBlue;
+            groupBox1.BackColor = System.Drawing.Color.FromArgb( ( ( int ) ( ( ( byte ) ( 46 ) ) ) ), ( ( int ) ( ( ( byte ) ( 51 ) ) ) ), ( ( int ) ( ( ( byte ) ( 73 ) ) ) ) );
             groupBox1.Controls.Add( this.lblClose );
             groupBox1.Controls.Add( this.panel2 );
             groupBox1.Controls.Add( this.panel1 );
@@ -117,7 +117,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font( "Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ( ( byte ) ( 0 ) ) );
-            this.label2.ForeColor = System.Drawing.Color.FromArgb( ( ( int ) ( ( ( byte ) ( 45 ) ) ) ), ( ( int ) ( ( ( byte ) ( 66 ) ) ) ), ( ( int ) ( ( ( byte ) ( 91 ) ) ) ) );
+            this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point( 38, 253 );
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size( 100, 19 );
@@ -128,7 +128,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font( "Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ( ( byte ) ( 0 ) ) );
-            this.label1.ForeColor = System.Drawing.Color.FromArgb( ( ( int ) ( ( ( byte ) ( 45 ) ) ) ), ( ( int ) ( ( ( byte ) ( 66 ) ) ) ), ( ( int ) ( ( ( byte ) ( 91 ) ) ) ) );
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point( 38, 209 );
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size( 100, 19 );
@@ -151,7 +151,7 @@
             this.btnClose.BackColor = System.Drawing.Color.White;
             this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnClose.Font = new System.Drawing.Font( "Microsoft YaHei", 9.75F, ( ( System.Drawing.FontStyle ) ( ( System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline ) ) ), System.Drawing.GraphicsUnit.Point, ( ( byte ) ( 0 ) ) );
-            this.btnClose.ForeColor = System.Drawing.Color.FromArgb( ( ( int ) ( ( ( byte ) ( 45 ) ) ) ), ( ( int ) ( ( ( byte ) ( 66 ) ) ) ), ( ( int ) ( ( ( byte ) ( 91 ) ) ) ) );
+            this.btnClose.ForeColor = System.Drawing.Color.FromArgb( ( ( int ) ( ( ( byte ) ( 46 ) ) ) ), ( ( int ) ( ( ( byte ) ( 51 ) ) ) ), ( ( int ) ( ( ( byte ) ( 73 ) ) ) ) );
             this.btnClose.Location = new System.Drawing.Point( 43, 427 );
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size( 338, 43 );
@@ -163,7 +163,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::DVLD.Properties.Resources.login1;
-            this.pictureBox1.Location = new System.Drawing.Point( 163, 36 );
+            this.pictureBox1.Location = new System.Drawing.Point( 171, 37 );
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size( 75, 72 );
             this.pictureBox1.TabIndex = 0;
@@ -174,7 +174,7 @@
             this.gbxIsActive.Controls.Add( this.rdbtnNo );
             this.gbxIsActive.Controls.Add( this.rdbtnYes );
             this.gbxIsActive.Font = new System.Drawing.Font( "Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ( ( byte ) ( 0 ) ) );
-            this.gbxIsActive.ForeColor = System.Drawing.Color.FromArgb( ( ( int ) ( ( ( byte ) ( 45 ) ) ) ), ( ( int ) ( ( ( byte ) ( 66 ) ) ) ), ( ( int ) ( ( ( byte ) ( 91 ) ) ) ) );
+            this.gbxIsActive.ForeColor = System.Drawing.Color.FromArgb( ( ( int ) ( ( ( byte ) ( 24 ) ) ) ), ( ( int ) ( ( ( byte ) ( 30 ) ) ) ), ( ( int ) ( ( ( byte ) ( 54 ) ) ) ) );
             this.gbxIsActive.Location = new System.Drawing.Point( 43, 296 );
             this.gbxIsActive.Name = "gbxIsActive";
             this.gbxIsActive.Size = new System.Drawing.Size( 338, 61 );
@@ -186,7 +186,7 @@
             // 
             this.rdbtnNo.AutoSize = true;
             this.rdbtnNo.Font = new System.Drawing.Font( "Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ( ( byte ) ( 0 ) ) );
-            this.rdbtnNo.ForeColor = System.Drawing.Color.FromArgb( ( ( int ) ( ( ( byte ) ( 45 ) ) ) ), ( ( int ) ( ( ( byte ) ( 66 ) ) ) ), ( ( int ) ( ( ( byte ) ( 91 ) ) ) ) );
+            this.rdbtnNo.ForeColor = System.Drawing.Color.White;
             this.rdbtnNo.Location = new System.Drawing.Point( 281, 24 );
             this.rdbtnNo.Name = "rdbtnNo";
             this.rdbtnNo.Size = new System.Drawing.Size( 49, 23 );
@@ -199,7 +199,7 @@
             this.rdbtnYes.AutoSize = true;
             this.rdbtnYes.Checked = true;
             this.rdbtnYes.Font = new System.Drawing.Font( "Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ( ( byte ) ( 0 ) ) );
-            this.rdbtnYes.ForeColor = System.Drawing.Color.FromArgb( ( ( int ) ( ( ( byte ) ( 45 ) ) ) ), ( ( int ) ( ( ( byte ) ( 66 ) ) ) ), ( ( int ) ( ( ( byte ) ( 91 ) ) ) ) );
+            this.rdbtnYes.ForeColor = System.Drawing.Color.White;
             this.rdbtnYes.Location = new System.Drawing.Point( 101, 24 );
             this.rdbtnYes.Name = "rdbtnYes";
             this.rdbtnYes.Size = new System.Drawing.Size( 50, 23 );
@@ -210,7 +210,7 @@
             // 
             // btnLogin
             // 
-            this.btnLogin.BackColor = System.Drawing.Color.FromArgb( ( ( int ) ( ( ( byte ) ( 45 ) ) ) ), ( ( int ) ( ( ( byte ) ( 66 ) ) ) ), ( ( int ) ( ( ( byte ) ( 91 ) ) ) ) );
+            this.btnLogin.BackColor = System.Drawing.Color.FromArgb( ( ( int ) ( ( ( byte ) ( 46 ) ) ) ), ( ( int ) ( ( ( byte ) ( 51 ) ) ) ), ( ( int ) ( ( ( byte ) ( 73 ) ) ) ) );
             this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLogin.Font = new System.Drawing.Font( "Microsoft YaHei", 9.75F, ( ( System.Drawing.FontStyle ) ( ( System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline ) ) ), System.Drawing.GraphicsUnit.Point, ( ( byte ) ( 0 ) ) );
             this.btnLogin.ForeColor = System.Drawing.Color.White;
@@ -225,11 +225,11 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font( "Lucida Handwriting", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ( ( byte ) ( 0 ) ) );
-            this.label3.ForeColor = System.Drawing.Color.FromArgb( ( ( int ) ( ( ( byte ) ( 45 ) ) ) ), ( ( int ) ( ( ( byte ) ( 66 ) ) ) ), ( ( int ) ( ( ( byte ) ( 91 ) ) ) ) );
-            this.label3.Location = new System.Drawing.Point( 118, 131 );
+            this.label3.Font = new System.Drawing.Font( "Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ( ( byte ) ( 0 ) ) );
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point( 137, 129 );
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size( 174, 45 );
+            this.label3.Size = new System.Drawing.Size( 149, 39 );
             this.label3.TabIndex = 5;
             this.label3.Text = "LOG IN ";
             // 
@@ -238,7 +238,7 @@
             this.lblNewRigester.AutoSize = true;
             this.lblNewRigester.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblNewRigester.Font = new System.Drawing.Font( "Microsoft YaHei", 9.75F, ( ( System.Drawing.FontStyle ) ( ( System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline ) ) ), System.Drawing.GraphicsUnit.Point, ( ( byte ) ( 0 ) ) );
-            this.lblNewRigester.ForeColor = System.Drawing.Color.FromArgb( ( ( int ) ( ( ( byte ) ( 45 ) ) ) ), ( ( int ) ( ( ( byte ) ( 66 ) ) ) ), ( ( int ) ( ( ( byte ) ( 91 ) ) ) ) );
+            this.lblNewRigester.ForeColor = System.Drawing.Color.White;
             this.lblNewRigester.Location = new System.Drawing.Point( 167, 485 );
             this.lblNewRigester.Name = "lblNewRigester";
             this.lblNewRigester.Size = new System.Drawing.Size( 212, 19 );

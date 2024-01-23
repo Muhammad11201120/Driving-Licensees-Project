@@ -10,7 +10,7 @@ namespace DVLD
         int appLicationTypeID = -1;
         int personID = -1;
         clsApplicationTypes applicationType = null;
-        clsLicensesClasses licenseClass = null;
+        clsLocalDrivingLicenseApplications localDrivingLicenseApplications = null;
         clsApplications application = null;
         public frmNewApplicationClass( int personID, int applicationTypeID )
         {
@@ -25,7 +25,7 @@ namespace DVLD
         }
         private void _fillLicenseClasses()
         {
-            DataTable dt = clsLicensesClasses.GetAllApplicationClases();
+            DataTable dt = clsLicensesClasses.GetAllLicenseClases();
             if ( dt != null )
             {
                 foreach ( DataRow row in dt.Rows )
@@ -59,10 +59,25 @@ namespace DVLD
             this.application.paidFees = this.applicationType.ApplicationFees;
             this.application.lastStatusDate = DateTime.Now;
             this.application.createdByUserID = clsGeneralSettings.userID;
+
+
+
             if ( this.application.Save() )
             {
-                MessageBox.Show( "Application Saved Suuccesfully" );
-                lblDriverLicenseApplicationID.Text = this.application.applicationID.ToString();
+                MessageBox.Show( "Application Saved Successfully" );
+                localDrivingLicenseApplications = new clsLocalDrivingLicenseApplications();
+                localDrivingLicenseApplications.applicationID = this.application.applicationID;
+                localDrivingLicenseApplications.licenseClassID = clsLicensesClasses.FindClassByID( ( comboBox1.SelectedIndex + 1 ) ).LicenseClassID;
+                if ( localDrivingLicenseApplications.Save() )
+                {
+                    MessageBox.Show( "Application Saved Successfully" );
+                    lblDriverLicenseApplicationID.Text = this.application.applicationID.ToString();
+                }
+                else
+                {
+                    MessageBox.Show( "licencse class went wrong" );
+                }
+
             }
             else
             {

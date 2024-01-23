@@ -53,19 +53,32 @@
             this.rETAKETESTToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.mANAGEAPPLICATIONSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.localDrivingLicenseApplicationsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.internationalDrivingLicenseApplicationsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.dETAINLICENSESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.mANAGEAPPLICATIONTYPESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator10 = new System.Windows.Forms.ToolStripSeparator();
             this.mANAGETESTTYPESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dRIVERSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnClose = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.lbNationalNumber = new System.Windows.Forms.Label();
+            this.lblUserName = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.panel2.SuspendLayout();
+            ( ( System.ComponentModel.ISupportInitialize ) ( this.pictureBox1 ) ).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
-            this.menuStrip1.BackColor = System.Drawing.Color.FromArgb( ( ( int ) ( ( ( byte ) ( 45 ) ) ) ), ( ( int ) ( ( ( byte ) ( 66 ) ) ) ), ( ( int ) ( ( ( byte ) ( 91 ) ) ) ) );
+            this.menuStrip1.BackColor = System.Drawing.Color.FromArgb( ( ( int ) ( ( ( byte ) ( 24 ) ) ) ), ( ( int ) ( ( ( byte ) ( 30 ) ) ) ), ( ( int ) ( ( ( byte ) ( 54 ) ) ) ) );
             this.menuStrip1.Dock = System.Windows.Forms.DockStyle.Left;
             this.menuStrip1.Items.AddRange( new System.Windows.Forms.ToolStripItem[] {
             this.pEOPLEToolStripMenuItem,
@@ -76,13 +89,13 @@
             this.menuStrip1.Location = new System.Drawing.Point( 0, 0 );
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
-            this.menuStrip1.Size = new System.Drawing.Size( 295, 561 );
-            this.menuStrip1.TabIndex = 0;
+            this.menuStrip1.Size = new System.Drawing.Size( 295, 622 );
+            this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // pEOPLEToolStripMenuItem
             // 
-            this.pEOPLEToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb( ( ( int ) ( ( ( byte ) ( 0 ) ) ) ), ( ( int ) ( ( ( byte ) ( 117 ) ) ) ), ( ( int ) ( ( ( byte ) ( 214 ) ) ) ) );
+            this.pEOPLEToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb( ( ( int ) ( ( ( byte ) ( 46 ) ) ) ), ( ( int ) ( ( ( byte ) ( 51 ) ) ) ), ( ( int ) ( ( ( byte ) ( 73 ) ) ) ) );
             this.pEOPLEToolStripMenuItem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pEOPLEToolStripMenuItem.Font = new System.Drawing.Font( "Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ( ( byte ) ( 0 ) ) );
             this.pEOPLEToolStripMenuItem.ForeColor = System.Drawing.Color.White;
@@ -127,7 +140,9 @@
             // 
             // mstrpAccountInfos
             // 
+            this.mstrpAccountInfos.BackColor = System.Drawing.Color.FromArgb( ( ( int ) ( ( ( byte ) ( 24 ) ) ) ), ( ( int ) ( ( ( byte ) ( 30 ) ) ) ), ( ( int ) ( ( ( byte ) ( 54 ) ) ) ) );
             this.mstrpAccountInfos.Font = new System.Drawing.Font( "Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ( ( byte ) ( 0 ) ) );
+            this.mstrpAccountInfos.ForeColor = System.Drawing.Color.FromArgb( ( ( int ) ( ( ( byte ) ( 24 ) ) ) ), ( ( int ) ( ( ( byte ) ( 30 ) ) ) ), ( ( int ) ( ( ( byte ) ( 54 ) ) ) ) );
             this.mstrpAccountInfos.Name = "mstrpAccountInfos";
             this.mstrpAccountInfos.Size = new System.Drawing.Size( 286, 34 );
             this.mstrpAccountInfos.Text = "ACCOUNT INFOS";
@@ -141,6 +156,7 @@
             // mstrpChangePassword
             // 
             this.mstrpChangePassword.Font = new System.Drawing.Font( "Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ( ( byte ) ( 0 ) ) );
+            this.mstrpChangePassword.ForeColor = System.Drawing.Color.FromArgb( ( ( int ) ( ( ( byte ) ( 24 ) ) ) ), ( ( int ) ( ( ( byte ) ( 30 ) ) ) ), ( ( int ) ( ( ( byte ) ( 54 ) ) ) ) );
             this.mstrpChangePassword.Name = "mstrpChangePassword";
             this.mstrpChangePassword.Size = new System.Drawing.Size( 286, 34 );
             this.mstrpChangePassword.Text = "CHANGE PASSWORD";
@@ -170,6 +186,7 @@
             this.dETAINLICENSESToolStripMenuItem,
             this.toolStripSeparator3,
             this.mANAGEAPPLICATIONTYPESToolStripMenuItem,
+            this.toolStripSeparator10,
             this.mANAGETESTTYPESToolStripMenuItem} );
             this.tstrpManageApplications.Font = new System.Drawing.Font( "Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ( ( byte ) ( 0 ) ) );
             this.tstrpManageApplications.ForeColor = System.Drawing.Color.White;
@@ -196,7 +213,7 @@
             this.toolStripSeparator6,
             this.rETAKETESTToolStripMenuItem} );
             this.dRIVINGLICENSESSERVICESToolStripMenuItem.Font = new System.Drawing.Font( "Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ( ( byte ) ( 0 ) ) );
-            this.dRIVINGLICENSESSERVICESToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb( ( ( int ) ( ( ( byte ) ( 45 ) ) ) ), ( ( int ) ( ( ( byte ) ( 66 ) ) ) ), ( ( int ) ( ( ( byte ) ( 91 ) ) ) ) );
+            this.dRIVINGLICENSESSERVICESToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb( ( ( int ) ( ( ( byte ) ( 24 ) ) ) ), ( ( int ) ( ( ( byte ) ( 30 ) ) ) ), ( ( int ) ( ( ( byte ) ( 54 ) ) ) ) );
             this.dRIVINGLICENSESSERVICESToolStripMenuItem.Name = "dRIVINGLICENSESSERVICESToolStripMenuItem";
             this.dRIVINGLICENSESSERVICESToolStripMenuItem.Size = new System.Drawing.Size( 294, 26 );
             this.dRIVINGLICENSESSERVICESToolStripMenuItem.Text = "DRIVING LICENSES SERVICES";
@@ -208,7 +225,7 @@
             this.localLicenseToolStripMenuItem,
             this.internationalLicenseToolStripMenuItem} );
             this.nEWDRIVINGLICENSEToolStripMenuItem.Font = new System.Drawing.Font( "Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ( ( byte ) ( 0 ) ) );
-            this.nEWDRIVINGLICENSEToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb( ( ( int ) ( ( ( byte ) ( 45 ) ) ) ), ( ( int ) ( ( ( byte ) ( 66 ) ) ) ), ( ( int ) ( ( ( byte ) ( 91 ) ) ) ) );
+            this.nEWDRIVINGLICENSEToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb( ( ( int ) ( ( ( byte ) ( 24 ) ) ) ), ( ( int ) ( ( ( byte ) ( 30 ) ) ) ), ( ( int ) ( ( ( byte ) ( 54 ) ) ) ) );
             this.nEWDRIVINGLICENSEToolStripMenuItem.Name = "nEWDRIVINGLICENSEToolStripMenuItem";
             this.nEWDRIVINGLICENSEToolStripMenuItem.Size = new System.Drawing.Size( 406, 24 );
             this.nEWDRIVINGLICENSEToolStripMenuItem.Text = "NEW DRIVING LICENSE";
@@ -217,7 +234,7 @@
             // 
             this.localLicenseToolStripMenuItem.BackColor = System.Drawing.Color.SteelBlue;
             this.localLicenseToolStripMenuItem.Font = new System.Drawing.Font( "Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ( ( byte ) ( 0 ) ) );
-            this.localLicenseToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb( ( ( int ) ( ( ( byte ) ( 45 ) ) ) ), ( ( int ) ( ( ( byte ) ( 66 ) ) ) ), ( ( int ) ( ( ( byte ) ( 91 ) ) ) ) );
+            this.localLicenseToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb( ( ( int ) ( ( ( byte ) ( 24 ) ) ) ), ( ( int ) ( ( ( byte ) ( 30 ) ) ) ), ( ( int ) ( ( ( byte ) ( 54 ) ) ) ) );
             this.localLicenseToolStripMenuItem.Name = "localLicenseToolStripMenuItem";
             this.localLicenseToolStripMenuItem.Size = new System.Drawing.Size( 195, 22 );
             this.localLicenseToolStripMenuItem.Text = "Local License";
@@ -227,7 +244,7 @@
             // 
             this.internationalLicenseToolStripMenuItem.BackColor = System.Drawing.Color.SteelBlue;
             this.internationalLicenseToolStripMenuItem.Font = new System.Drawing.Font( "Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ( ( byte ) ( 0 ) ) );
-            this.internationalLicenseToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb( ( ( int ) ( ( ( byte ) ( 45 ) ) ) ), ( ( int ) ( ( ( byte ) ( 66 ) ) ) ), ( ( int ) ( ( ( byte ) ( 91 ) ) ) ) );
+            this.internationalLicenseToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb( ( ( int ) ( ( ( byte ) ( 24 ) ) ) ), ( ( int ) ( ( ( byte ) ( 30 ) ) ) ), ( ( int ) ( ( ( byte ) ( 54 ) ) ) ) );
             this.internationalLicenseToolStripMenuItem.Name = "internationalLicenseToolStripMenuItem";
             this.internationalLicenseToolStripMenuItem.Size = new System.Drawing.Size( 195, 22 );
             this.internationalLicenseToolStripMenuItem.Text = "International License";
@@ -241,7 +258,7 @@
             // 
             this.rENEWDRIVINGLICENSEToolStripMenuItem.BackColor = System.Drawing.Color.SteelBlue;
             this.rENEWDRIVINGLICENSEToolStripMenuItem.Font = new System.Drawing.Font( "Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ( ( byte ) ( 0 ) ) );
-            this.rENEWDRIVINGLICENSEToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb( ( ( int ) ( ( ( byte ) ( 45 ) ) ) ), ( ( int ) ( ( ( byte ) ( 66 ) ) ) ), ( ( int ) ( ( ( byte ) ( 91 ) ) ) ) );
+            this.rENEWDRIVINGLICENSEToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb( ( ( int ) ( ( ( byte ) ( 24 ) ) ) ), ( ( int ) ( ( ( byte ) ( 30 ) ) ) ), ( ( int ) ( ( ( byte ) ( 54 ) ) ) ) );
             this.rENEWDRIVINGLICENSEToolStripMenuItem.Name = "rENEWDRIVINGLICENSEToolStripMenuItem";
             this.rENEWDRIVINGLICENSEToolStripMenuItem.Size = new System.Drawing.Size( 406, 24 );
             this.rENEWDRIVINGLICENSEToolStripMenuItem.Text = "RENEW DRIVING LICENSE";
@@ -255,7 +272,7 @@
             // 
             this.toolStripMenuItem4.BackColor = System.Drawing.Color.SteelBlue;
             this.toolStripMenuItem4.Font = new System.Drawing.Font( "Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ( ( byte ) ( 0 ) ) );
-            this.toolStripMenuItem4.ForeColor = System.Drawing.Color.FromArgb( ( ( int ) ( ( ( byte ) ( 45 ) ) ) ), ( ( int ) ( ( ( byte ) ( 66 ) ) ) ), ( ( int ) ( ( ( byte ) ( 91 ) ) ) ) );
+            this.toolStripMenuItem4.ForeColor = System.Drawing.Color.FromArgb( ( ( int ) ( ( ( byte ) ( 24 ) ) ) ), ( ( int ) ( ( ( byte ) ( 30 ) ) ) ), ( ( int ) ( ( ( byte ) ( 54 ) ) ) ) );
             this.toolStripMenuItem4.Name = "toolStripMenuItem4";
             this.toolStripMenuItem4.Size = new System.Drawing.Size( 406, 24 );
             this.toolStripMenuItem4.Text = "REPLACEMENT FOR LOST OR DAMAGED LICENSE";
@@ -269,7 +286,7 @@
             // 
             this.rELASEDETAINEDDRIVINGLICENSEToolStripMenuItem.BackColor = System.Drawing.Color.SteelBlue;
             this.rELASEDETAINEDDRIVINGLICENSEToolStripMenuItem.Font = new System.Drawing.Font( "Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ( ( byte ) ( 0 ) ) );
-            this.rELASEDETAINEDDRIVINGLICENSEToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb( ( ( int ) ( ( ( byte ) ( 45 ) ) ) ), ( ( int ) ( ( ( byte ) ( 66 ) ) ) ), ( ( int ) ( ( ( byte ) ( 91 ) ) ) ) );
+            this.rELASEDETAINEDDRIVINGLICENSEToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb( ( ( int ) ( ( ( byte ) ( 24 ) ) ) ), ( ( int ) ( ( ( byte ) ( 30 ) ) ) ), ( ( int ) ( ( ( byte ) ( 54 ) ) ) ) );
             this.rELASEDETAINEDDRIVINGLICENSEToolStripMenuItem.Name = "rELASEDETAINEDDRIVINGLICENSEToolStripMenuItem";
             this.rELASEDETAINEDDRIVINGLICENSEToolStripMenuItem.Size = new System.Drawing.Size( 406, 24 );
             this.rELASEDETAINEDDRIVINGLICENSEToolStripMenuItem.Text = "RELASE DETAINED DRIVING LICENSE";
@@ -283,7 +300,7 @@
             // 
             this.rETAKETESTToolStripMenuItem.BackColor = System.Drawing.Color.SteelBlue;
             this.rETAKETESTToolStripMenuItem.Font = new System.Drawing.Font( "Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ( ( byte ) ( 0 ) ) );
-            this.rETAKETESTToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb( ( ( int ) ( ( ( byte ) ( 45 ) ) ) ), ( ( int ) ( ( ( byte ) ( 66 ) ) ) ), ( ( int ) ( ( ( byte ) ( 91 ) ) ) ) );
+            this.rETAKETESTToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb( ( ( int ) ( ( ( byte ) ( 24 ) ) ) ), ( ( int ) ( ( ( byte ) ( 30 ) ) ) ), ( ( int ) ( ( ( byte ) ( 54 ) ) ) ) );
             this.rETAKETESTToolStripMenuItem.Name = "rETAKETESTToolStripMenuItem";
             this.rETAKETESTToolStripMenuItem.Size = new System.Drawing.Size( 406, 24 );
             this.rETAKETESTToolStripMenuItem.Text = "RETAKE TEST";
@@ -296,11 +313,29 @@
             // mANAGEAPPLICATIONSToolStripMenuItem
             // 
             this.mANAGEAPPLICATIONSToolStripMenuItem.BackColor = System.Drawing.Color.SteelBlue;
+            this.mANAGEAPPLICATIONSToolStripMenuItem.DropDownItems.AddRange( new System.Windows.Forms.ToolStripItem[] {
+            this.localDrivingLicenseApplicationsToolStripMenuItem1,
+            this.internationalDrivingLicenseApplicationsToolStripMenuItem} );
             this.mANAGEAPPLICATIONSToolStripMenuItem.Font = new System.Drawing.Font( "Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ( ( byte ) ( 0 ) ) );
-            this.mANAGEAPPLICATIONSToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb( ( ( int ) ( ( ( byte ) ( 45 ) ) ) ), ( ( int ) ( ( ( byte ) ( 66 ) ) ) ), ( ( int ) ( ( ( byte ) ( 91 ) ) ) ) );
+            this.mANAGEAPPLICATIONSToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb( ( ( int ) ( ( ( byte ) ( 24 ) ) ) ), ( ( int ) ( ( ( byte ) ( 30 ) ) ) ), ( ( int ) ( ( ( byte ) ( 54 ) ) ) ) );
             this.mANAGEAPPLICATIONSToolStripMenuItem.Name = "mANAGEAPPLICATIONSToolStripMenuItem";
             this.mANAGEAPPLICATIONSToolStripMenuItem.Size = new System.Drawing.Size( 294, 26 );
             this.mANAGEAPPLICATIONSToolStripMenuItem.Text = "MANAGE APPLICATIONS";
+            // 
+            // localDrivingLicenseApplicationsToolStripMenuItem1
+            // 
+            this.localDrivingLicenseApplicationsToolStripMenuItem1.ForeColor = System.Drawing.Color.FromArgb( ( ( int ) ( ( ( byte ) ( 24 ) ) ) ), ( ( int ) ( ( ( byte ) ( 30 ) ) ) ), ( ( int ) ( ( ( byte ) ( 54 ) ) ) ) );
+            this.localDrivingLicenseApplicationsToolStripMenuItem1.Name = "localDrivingLicenseApplicationsToolStripMenuItem1";
+            this.localDrivingLicenseApplicationsToolStripMenuItem1.Size = new System.Drawing.Size( 359, 26 );
+            this.localDrivingLicenseApplicationsToolStripMenuItem1.Text = "local driving license applications";
+            this.localDrivingLicenseApplicationsToolStripMenuItem1.Click += new System.EventHandler( this.localDrivingLicenseApplicationsToolStripMenuItem1_Click );
+            // 
+            // internationalDrivingLicenseApplicationsToolStripMenuItem
+            // 
+            this.internationalDrivingLicenseApplicationsToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb( ( ( int ) ( ( ( byte ) ( 24 ) ) ) ), ( ( int ) ( ( ( byte ) ( 30 ) ) ) ), ( ( int ) ( ( ( byte ) ( 54 ) ) ) ) );
+            this.internationalDrivingLicenseApplicationsToolStripMenuItem.Name = "internationalDrivingLicenseApplicationsToolStripMenuItem";
+            this.internationalDrivingLicenseApplicationsToolStripMenuItem.Size = new System.Drawing.Size( 359, 26 );
+            this.internationalDrivingLicenseApplicationsToolStripMenuItem.Text = "international driving license applications";
             // 
             // toolStripSeparator4
             // 
@@ -311,7 +346,7 @@
             // 
             this.dETAINLICENSESToolStripMenuItem.BackColor = System.Drawing.Color.SteelBlue;
             this.dETAINLICENSESToolStripMenuItem.Font = new System.Drawing.Font( "Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ( ( byte ) ( 0 ) ) );
-            this.dETAINLICENSESToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb( ( ( int ) ( ( ( byte ) ( 45 ) ) ) ), ( ( int ) ( ( ( byte ) ( 66 ) ) ) ), ( ( int ) ( ( ( byte ) ( 91 ) ) ) ) );
+            this.dETAINLICENSESToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb( ( ( int ) ( ( ( byte ) ( 24 ) ) ) ), ( ( int ) ( ( ( byte ) ( 30 ) ) ) ), ( ( int ) ( ( ( byte ) ( 54 ) ) ) ) );
             this.dETAINLICENSESToolStripMenuItem.Name = "dETAINLICENSESToolStripMenuItem";
             this.dETAINLICENSESToolStripMenuItem.Size = new System.Drawing.Size( 294, 26 );
             this.dETAINLICENSESToolStripMenuItem.Text = "DETAIN LICENSES";
@@ -325,17 +360,22 @@
             // 
             this.mANAGEAPPLICATIONTYPESToolStripMenuItem.BackColor = System.Drawing.Color.SteelBlue;
             this.mANAGEAPPLICATIONTYPESToolStripMenuItem.Font = new System.Drawing.Font( "Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ( ( byte ) ( 0 ) ) );
-            this.mANAGEAPPLICATIONTYPESToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb( ( ( int ) ( ( ( byte ) ( 45 ) ) ) ), ( ( int ) ( ( ( byte ) ( 66 ) ) ) ), ( ( int ) ( ( ( byte ) ( 91 ) ) ) ) );
+            this.mANAGEAPPLICATIONTYPESToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb( ( ( int ) ( ( ( byte ) ( 24 ) ) ) ), ( ( int ) ( ( ( byte ) ( 30 ) ) ) ), ( ( int ) ( ( ( byte ) ( 54 ) ) ) ) );
             this.mANAGEAPPLICATIONTYPESToolStripMenuItem.Name = "mANAGEAPPLICATIONTYPESToolStripMenuItem";
             this.mANAGEAPPLICATIONTYPESToolStripMenuItem.Size = new System.Drawing.Size( 294, 26 );
             this.mANAGEAPPLICATIONTYPESToolStripMenuItem.Text = "MANAGE APPLICATION TYPES";
             this.mANAGEAPPLICATIONTYPESToolStripMenuItem.Click += new System.EventHandler( this.mANAGEAPPLICATIONTYPESToolStripMenuItem_Click );
             // 
+            // toolStripSeparator10
+            // 
+            this.toolStripSeparator10.Name = "toolStripSeparator10";
+            this.toolStripSeparator10.Size = new System.Drawing.Size( 291, 6 );
+            // 
             // mANAGETESTTYPESToolStripMenuItem
             // 
             this.mANAGETESTTYPESToolStripMenuItem.BackColor = System.Drawing.Color.SteelBlue;
             this.mANAGETESTTYPESToolStripMenuItem.Font = new System.Drawing.Font( "Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ( ( byte ) ( 0 ) ) );
-            this.mANAGETESTTYPESToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb( ( ( int ) ( ( ( byte ) ( 45 ) ) ) ), ( ( int ) ( ( ( byte ) ( 66 ) ) ) ), ( ( int ) ( ( ( byte ) ( 91 ) ) ) ) );
+            this.mANAGETESTTYPESToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb( ( ( int ) ( ( ( byte ) ( 24 ) ) ) ), ( ( int ) ( ( ( byte ) ( 30 ) ) ) ), ( ( int ) ( ( ( byte ) ( 54 ) ) ) ) );
             this.mANAGETESTTYPESToolStripMenuItem.Name = "mANAGETESTTYPESToolStripMenuItem";
             this.mANAGETESTTYPESToolStripMenuItem.Size = new System.Drawing.Size( 294, 26 );
             this.mANAGETESTTYPESToolStripMenuItem.Text = "MANAGE TEST TYPES";
@@ -357,7 +397,7 @@
             this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnClose.Font = new System.Drawing.Font( "Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ( ( byte ) ( 0 ) ) );
             this.btnClose.ForeColor = System.Drawing.Color.White;
-            this.btnClose.Location = new System.Drawing.Point( 1198, 516 );
+            this.btnClose.Location = new System.Drawing.Point( 1104, 525 );
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size( 120, 40 );
             this.btnClose.TabIndex = 1;
@@ -365,22 +405,93 @@
             this.btnClose.UseVisualStyleBackColor = false;
             this.btnClose.Click += new System.EventHandler( this.btnClose_Click );
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb( ( ( int ) ( ( ( byte ) ( 24 ) ) ) ), ( ( int ) ( ( ( byte ) ( 30 ) ) ) ), ( ( int ) ( ( ( byte ) ( 54 ) ) ) ) );
+            this.panel1.Controls.Add( this.panel4 );
+            this.panel1.Controls.Add( this.panel2 );
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point( 0, 0 );
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size( 295, 577 );
+            this.panel1.TabIndex = 2;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb( ( ( int ) ( ( ( byte ) ( 24 ) ) ) ), ( ( int ) ( ( ( byte ) ( 30 ) ) ) ), ( ( int ) ( ( ( byte ) ( 54 ) ) ) ) );
+            this.panel4.Controls.Add( this.menuStrip1 );
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point( 0, 176 );
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size( 295, 622 );
+            this.panel4.TabIndex = 4;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add( this.lbNationalNumber );
+            this.panel2.Controls.Add( this.lblUserName );
+            this.panel2.Controls.Add( this.pictureBox1 );
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point( 0, 0 );
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size( 295, 176 );
+            this.panel2.TabIndex = 3;
+            // 
+            // lbNationalNumber
+            // 
+            this.lbNationalNumber.AutoSize = true;
+            this.lbNationalNumber.Font = new System.Drawing.Font( "Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ( ( byte ) ( 0 ) ) );
+            this.lbNationalNumber.ForeColor = System.Drawing.Color.Green;
+            this.lbNationalNumber.Location = new System.Drawing.Point( 112, 142 );
+            this.lbNationalNumber.Name = "lbNationalNumber";
+            this.lbNationalNumber.Size = new System.Drawing.Size( 68, 16 );
+            this.lbNationalNumber.TabIndex = 4;
+            this.lbNationalNumber.Text = "N Number";
+            this.lbNationalNumber.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblUserName
+            // 
+            this.lblUserName.AutoSize = true;
+            this.lblUserName.Font = new System.Drawing.Font( "Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ( ( byte ) ( 0 ) ) );
+            this.lblUserName.ForeColor = System.Drawing.Color.FromArgb( ( ( int ) ( ( ( byte ) ( 0 ) ) ) ), ( ( int ) ( ( ( byte ) ( 126 ) ) ) ), ( ( int ) ( ( ( byte ) ( 249 ) ) ) ) );
+            this.lblUserName.Location = new System.Drawing.Point( 93, 115 );
+            this.lblUserName.Name = "lblUserName";
+            this.lblUserName.Size = new System.Drawing.Size( 87, 18 );
+            this.lblUserName.TabIndex = 3;
+            this.lblUserName.Text = "user name";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point( 78, 12 );
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size( 122, 90 );
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF( 6F, 13F );
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.SteelBlue;
-            this.ClientSize = new System.Drawing.Size( 1330, 561 );
+            this.BackColor = System.Drawing.Color.FromArgb( ( ( int ) ( ( ( byte ) ( 46 ) ) ) ), ( ( int ) ( ( ( byte ) ( 51 ) ) ) ), ( ( int ) ( ( ( byte ) ( 73 ) ) ) ) );
+            this.ClientSize = new System.Drawing.Size( 1236, 577 );
+            this.Controls.Add( this.panel1 );
             this.Controls.Add( this.btnClose );
-            this.Controls.Add( this.menuStrip1 );
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmMain";
-            this.Text = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "DASHBOARD";
+            this.Load += new System.EventHandler( this.frmMain_Load );
             this.menuStrip1.ResumeLayout( false );
             this.menuStrip1.PerformLayout();
+            this.panel1.ResumeLayout( false );
+            this.panel4.ResumeLayout( false );
+            this.panel4.PerformLayout();
+            this.panel2.ResumeLayout( false );
+            this.panel2.PerformLayout();
+            ( ( System.ComponentModel.ISupportInitialize ) ( this.pictureBox1 ) ).EndInit();
             this.ResumeLayout( false );
-            this.PerformLayout();
 
         }
 
@@ -417,6 +528,15 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
+        private System.Windows.Forms.ToolStripMenuItem localDrivingLicenseApplicationsToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem internationalDrivingLicenseApplicationsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator10;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label lblUserName;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label lbNationalNumber;
     }
 }
 

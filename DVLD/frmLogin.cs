@@ -14,8 +14,10 @@ namespace DVLD
             public string userName;
             public string password;
             public bool isActive;
+            public string userImg;
         }
         private StCredentials _Credentials;
+        private clsPeople person;
         clsUsers user;
         public frmLogin()
         {
@@ -31,10 +33,13 @@ namespace DVLD
             clsGeneralSettings.password = _Credentials.password;
 
             user = clsUsers.FindUserByUserName( _Credentials.userName );
+            person = clsPeople.FindPersonByID( user._PersonID );
             if ( user != null && user._Name == _Credentials.userName && user._Password == _Credentials.password )
             {
                 _Credentials.userID = this.user._UserID;
                 clsGeneralSettings.userID = this.user._UserID;
+                clsGeneralSettings.userImg = person.imagePath;
+                clsGeneralSettings.nationalNumber = person.nationalID;
                 success = true;
             }
 
@@ -108,5 +113,7 @@ namespace DVLD
         {
             this.Close();
         }
+
+
     }
 }

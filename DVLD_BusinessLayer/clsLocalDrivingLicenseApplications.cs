@@ -59,5 +59,34 @@ namespace DVLD_BusinessLayer
                 return null;
             }
         }
+        public bool AddNewLocalDrivingLicenseApplication()
+        {
+            this.applicationID = clsLocalDrivingLicenseApplicationsDataAccess.AddNewLocalDrivingLicenseApplication( this.licenseClassID, this.applicationID );
+            return ( this.applicationID != -1 );
+        }
+        public bool UpdateLocalDrivingLicenseApplication()
+        {
+            return clsLocalDrivingLicenseApplicationsDataAccess.UpdateLocalDrivingLicenseApplication( this.localDrivingLicenseApplicationID, this.licenseClassID, this.applicationID );
+        }
+        public bool Save()
+        {
+            switch ( Mode )
+            {
+                case enMode.ADDNEW:
+                    if ( AddNewLocalDrivingLicenseApplication() )
+                    {
+                        this.Mode = enMode.UPDATE;
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
+                case enMode.UPDATE:
+                    return UpdateLocalDrivingLicenseApplication();
+                default:
+                    return false;
+            }
+        }
     }
 }

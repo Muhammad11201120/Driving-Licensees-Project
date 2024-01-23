@@ -47,7 +47,7 @@
             // 
             // ctrShowPersonDetails1
             // 
-            this.ctrShowPersonDetails1.BackColor = System.Drawing.Color.FromArgb( ( ( int ) ( ( ( byte ) ( 0 ) ) ) ), ( ( int ) ( ( ( byte ) ( 117 ) ) ) ), ( ( int ) ( ( ( byte ) ( 214 ) ) ) ) );
+            this.ctrShowPersonDetails1.BackColor = System.Drawing.Color.FromArgb( ( ( int ) ( ( ( byte ) ( 24 ) ) ) ), ( ( int ) ( ( ( byte ) ( 30 ) ) ) ), ( ( int ) ( ( ( byte ) ( 54 ) ) ) ) );
             this.ctrShowPersonDetails1.Location = new System.Drawing.Point( 0, -2 );
             this.ctrShowPersonDetails1.Name = "ctrShowPersonDetails1";
             this.ctrShowPersonDetails1.PersonID = 0;
@@ -70,7 +70,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF( 6F, 13F );
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb( ( ( int ) ( ( ( byte ) ( 0 ) ) ) ), ( ( int ) ( ( ( byte ) ( 117 ) ) ) ), ( ( int ) ( ( ( byte ) ( 214 ) ) ) ) );
+            this.BackColor = System.Drawing.Color.FromArgb( ( ( int ) ( ( ( byte ) ( 24 ) ) ) ), ( ( int ) ( ( ( byte ) ( 30 ) ) ) ), ( ( int ) ( ( ( byte ) ( 54 ) ) ) ) );
             this.ClientSize = new System.Drawing.Size( 843, 782 );
             this.Controls.Add( this.btnSave );
             this.Controls.Add( this.ctrShowPersonDetails1 );
