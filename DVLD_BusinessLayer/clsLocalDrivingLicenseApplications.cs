@@ -37,9 +37,9 @@ namespace DVLD_BusinessLayer
         {
             int licenseClassID = -1;
             int applicationID = -1;
-            if ( clsLocalDrivingLicenseApplicationsDataAccess.FindLocalDrivingLicenseApplicationByLocalDrivingLicenseApplicationID( localDrivingLicenseApplicationID, ref licenseClassID, ref applicationID ) )
+            if ( clsLocalDrivingLicenseApplicationsDataAccess.FindLocalDrivingLicenseApplicationByLocalDrivingLicenseApplicationID( LocalDrivingLicenseApplicationID, ref licenseClassID, ref applicationID ) )
             {
-                return new clsLocalDrivingLicenseApplications( localDrivingLicenseApplicationID, licenseClassID, applicationID );
+                return new clsLocalDrivingLicenseApplications( LocalDrivingLicenseApplicationID, licenseClassID, applicationID );
             }
             else
             {
@@ -59,6 +59,21 @@ namespace DVLD_BusinessLayer
                 return null;
             }
         }
+        // find local driving license application by application id
+        public static clsLocalDrivingLicenseApplications FindLocalDrivingLicenseApplicationByApplicationID( int applicationID )
+        {
+            int localDrivingLicenseApplicationID = -1;
+            int licenseClassID = -1;
+            if ( clsLocalDrivingLicenseApplicationsDataAccess.FindLocalDrivingLicenseApplicationByApplicationID( applicationID, ref localDrivingLicenseApplicationID, ref licenseClassID ) )
+            {
+                return new clsLocalDrivingLicenseApplications( localDrivingLicenseApplicationID, licenseClassID, applicationID );
+            }
+            else
+            {
+                return null;
+            }
+        }
+
         public bool AddNewLocalDrivingLicenseApplication()
         {
             this.applicationID = clsLocalDrivingLicenseApplicationsDataAccess.AddNewLocalDrivingLicenseApplication( this.licenseClassID, this.applicationID );

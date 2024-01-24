@@ -37,25 +37,25 @@
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip( this.components );
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.btnAddNewApplication = new System.Windows.Forms.Button();
-            this.btnClose = new System.Windows.Forms.Button();
             this.showLicenseDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.shecduleTestToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.shcduleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
             this.scheduleWritingTestToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
             this.scheduleStreetTestToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.eDITToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteLicenseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.issueLicenseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.showPersonLicenseHistoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.showLicenseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.showPersonLicenseHistoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnAddNewApplication = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
             ( ( System.ComponentModel.ISupportInitialize ) ( this.dataGridView1 ) ).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -126,7 +126,7 @@
             dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
             this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size( 1032, 441 );
+            this.dataGridView1.Size = new System.Drawing.Size( 1032, 464 );
             this.dataGridView1.TabIndex = 8;
             // 
             // contextMenuStrip1
@@ -141,63 +141,11 @@
             this.toolStripSeparator4,
             this.issueLicenseToolStripMenuItem,
             this.toolStripSeparator5,
-            this.showPersonLicenseHistoryToolStripMenuItem,
+            this.showLicenseToolStripMenuItem,
             this.toolStripSeparator2,
-            this.showLicenseToolStripMenuItem} );
+            this.showPersonLicenseHistoryToolStripMenuItem} );
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size( 307, 300 );
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size( 303, 6 );
-            // 
-            // toolStripSeparator3
-            // 
-            this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size( 303, 6 );
-            // 
-            // toolStripSeparator4
-            // 
-            this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size( 303, 6 );
-            // 
-            // toolStripSeparator5
-            // 
-            this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size( 303, 6 );
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size( 303, 6 );
-            // 
-            // btnAddNewApplication
-            // 
-            this.btnAddNewApplication.Font = new System.Drawing.Font( "Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ( ( byte ) ( 0 ) ) );
-            this.btnAddNewApplication.ForeColor = System.Drawing.Color.FromArgb( ( ( int ) ( ( ( byte ) ( 24 ) ) ) ), ( ( int ) ( ( ( byte ) ( 30 ) ) ) ), ( ( int ) ( ( ( byte ) ( 54 ) ) ) ) );
-            this.btnAddNewApplication.Image = global::DVLD.Properties.Resources.New_Application_64;
-            this.btnAddNewApplication.Location = new System.Drawing.Point( 908, 98 );
-            this.btnAddNewApplication.Name = "btnAddNewApplication";
-            this.btnAddNewApplication.Size = new System.Drawing.Size( 130, 73 );
-            this.btnAddNewApplication.TabIndex = 11;
-            this.btnAddNewApplication.UseVisualStyleBackColor = true;
-            this.btnAddNewApplication.Click += new System.EventHandler( this.btnAddNewApplication_Click );
-            // 
-            // btnClose
-            // 
-            this.btnClose.Font = new System.Drawing.Font( "Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ( ( byte ) ( 0 ) ) );
-            this.btnClose.ForeColor = System.Drawing.Color.FromArgb( ( ( int ) ( ( ( byte ) ( 24 ) ) ) ), ( ( int ) ( ( ( byte ) ( 30 ) ) ) ), ( ( int ) ( ( ( byte ) ( 54 ) ) ) ) );
-            this.btnClose.Image = global::DVLD.Properties.Resources.cross_64;
-            this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClose.Location = new System.Drawing.Point( 908, 624 );
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size( 130, 61 );
-            this.btnClose.TabIndex = 10;
-            this.btnClose.Text = "    CLOSE";
-            this.btnClose.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnClose.UseVisualStyleBackColor = true;
-            this.btnClose.Click += new System.EventHandler( this.btnClose_Click );
+            this.contextMenuStrip1.Size = new System.Drawing.Size( 307, 322 );
             // 
             // showLicenseDetailsToolStripMenuItem
             // 
@@ -207,6 +155,12 @@
             this.showLicenseDetailsToolStripMenuItem.Name = "showLicenseDetailsToolStripMenuItem";
             this.showLicenseDetailsToolStripMenuItem.Size = new System.Drawing.Size( 306, 38 );
             this.showLicenseDetailsToolStripMenuItem.Text = "Show Application Details";
+            this.showLicenseDetailsToolStripMenuItem.Click += new System.EventHandler( this.showLicenseDetailsToolStripMenuItem_Click );
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size( 303, 6 );
             // 
             // shecduleTestToolStripMenuItem
             // 
@@ -257,6 +211,11 @@
             this.scheduleStreetTestToolStripMenuItem.Size = new System.Drawing.Size( 237, 38 );
             this.scheduleStreetTestToolStripMenuItem.Text = "Schedule Street Test";
             // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size( 303, 6 );
+            // 
             // eDITToolStripMenuItem
             // 
             this.eDITToolStripMenuItem.Font = new System.Drawing.Font( "Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ( ( byte ) ( 0 ) ) );
@@ -275,6 +234,11 @@
             this.deleteLicenseToolStripMenuItem.Size = new System.Drawing.Size( 306, 38 );
             this.deleteLicenseToolStripMenuItem.Text = "Delete Application";
             // 
+            // toolStripSeparator4
+            // 
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
+            this.toolStripSeparator4.Size = new System.Drawing.Size( 303, 6 );
+            // 
             // issueLicenseToolStripMenuItem
             // 
             this.issueLicenseToolStripMenuItem.Font = new System.Drawing.Font( "Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ( ( byte ) ( 0 ) ) );
@@ -284,23 +248,63 @@
             this.issueLicenseToolStripMenuItem.Size = new System.Drawing.Size( 306, 38 );
             this.issueLicenseToolStripMenuItem.Text = "Issue Driving License (First Time)";
             // 
+            // toolStripSeparator5
+            // 
+            this.toolStripSeparator5.Name = "toolStripSeparator5";
+            this.toolStripSeparator5.Size = new System.Drawing.Size( 303, 6 );
+            // 
+            // showLicenseToolStripMenuItem
+            // 
+            this.showLicenseToolStripMenuItem.Font = new System.Drawing.Font( "Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ( ( byte ) ( 0 ) ) );
+            this.showLicenseToolStripMenuItem.Image = global::DVLD.Properties.Resources.License_View_321;
+            this.showLicenseToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.showLicenseToolStripMenuItem.Name = "showLicenseToolStripMenuItem";
+            this.showLicenseToolStripMenuItem.Size = new System.Drawing.Size( 306, 38 );
+            this.showLicenseToolStripMenuItem.Text = "Show License";
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size( 303, 6 );
+            // 
             // showPersonLicenseHistoryToolStripMenuItem
             // 
             this.showPersonLicenseHistoryToolStripMenuItem.Font = new System.Drawing.Font( "Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ( ( byte ) ( 0 ) ) );
-            this.showPersonLicenseHistoryToolStripMenuItem.Image = global::DVLD.Properties.Resources.License_View_32;
+            this.showPersonLicenseHistoryToolStripMenuItem.Image = global::DVLD.Properties.Resources.Notes_321;
             this.showPersonLicenseHistoryToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.showPersonLicenseHistoryToolStripMenuItem.Name = "showPersonLicenseHistoryToolStripMenuItem";
             this.showPersonLicenseHistoryToolStripMenuItem.Size = new System.Drawing.Size( 306, 38 );
             this.showPersonLicenseHistoryToolStripMenuItem.Text = "Show Person License History";
             // 
-            // showLicenseToolStripMenuItem
+            // btnAddNewApplication
             // 
-            this.showLicenseToolStripMenuItem.Font = new System.Drawing.Font( "Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ( ( byte ) ( 0 ) ) );
-            this.showLicenseToolStripMenuItem.Image = global::DVLD.Properties.Resources.New_Driving_License_32;
-            this.showLicenseToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.showLicenseToolStripMenuItem.Name = "showLicenseToolStripMenuItem";
-            this.showLicenseToolStripMenuItem.Size = new System.Drawing.Size( 306, 38 );
-            this.showLicenseToolStripMenuItem.Text = "Show License";
+            this.btnAddNewApplication.Font = new System.Drawing.Font( "Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ( ( byte ) ( 0 ) ) );
+            this.btnAddNewApplication.ForeColor = System.Drawing.Color.FromArgb( ( ( int ) ( ( ( byte ) ( 46 ) ) ) ), ( ( int ) ( ( ( byte ) ( 51 ) ) ) ), ( ( int ) ( ( ( byte ) ( 73 ) ) ) ) );
+            this.btnAddNewApplication.Image = global::DVLD.Properties.Resources.New_Driving_License_321;
+            this.btnAddNewApplication.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAddNewApplication.Location = new System.Drawing.Point( 908, 133 );
+            this.btnAddNewApplication.Name = "btnAddNewApplication";
+            this.btnAddNewApplication.Size = new System.Drawing.Size( 130, 38 );
+            this.btnAddNewApplication.TabIndex = 11;
+            this.btnAddNewApplication.Text = "ADD NEW";
+            this.btnAddNewApplication.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAddNewApplication.UseVisualStyleBackColor = true;
+            this.btnAddNewApplication.Click += new System.EventHandler( this.btnAddNewApplication_Click );
+            // 
+            // btnClose
+            // 
+            this.btnClose.Font = new System.Drawing.Font( "Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ( ( byte ) ( 0 ) ) );
+            this.btnClose.ForeColor = System.Drawing.Color.FromArgb( ( ( int ) ( ( ( byte ) ( 24 ) ) ) ), ( ( int ) ( ( ( byte ) ( 30 ) ) ) ), ( ( int ) ( ( ( byte ) ( 54 ) ) ) ) );
+            this.btnClose.Image = global::DVLD.Properties.Resources.cross_32;
+            this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnClose.Location = new System.Drawing.Point( 908, 647 );
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size( 130, 38 );
+            this.btnClose.TabIndex = 10;
+            this.btnClose.Text = "    CLOSE";
+            this.btnClose.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler( this.btnClose_Click );
             // 
             // frmLocalDrivingLicenseApplications
             // 

@@ -105,6 +105,41 @@ namespace DVLD_DataAccessLayer
             }
             return isFound;
         }
+        // find local driving license application by application id
+        public static bool FindLocalDrivingLicenseApplicationByApplicationID( int applicationID, ref int localDrivingLicenseApplicationID, ref int licenseClassID )
+        {
+            bool isFound = false;
+            SqlConnection connection = new SqlConnection( DataAccesseSettings.DVLD_String );
+            string query = "SELECT top 1 * FROM LocalDrivingLicenseApplications WHERE ApplicationID = @applicationID";
+            SqlCommand cmd = new SqlCommand( query, connection );
+            cmd.Parameters.AddWithValue( "@applicationID", applicationID );
+
+            try
+            {
+                connection.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+                if ( reader.Read() )
+                {
+                    isFound = true;
+                    localDrivingLicenseApplicationID = ( int ) reader[ "LocalDrivingLicenseApplicationID" ];
+                    licenseClassID = ( int ) reader[ "LicenseClassID" ];
+                }
+                else
+                {
+                    isFound = false;
+                }
+                reader.Close();
+            }
+            catch ( System.Exception ex )
+            {
+                isFound = false;
+            }
+            finally
+            {
+                connection.Close();
+            }
+            return isFound;
+        }
         public static int AddNewLocalDrivingLicenseApplication( int licenseClassID, int applicationID )
         {
             int localDrivingLicenseApplicationID = -1;

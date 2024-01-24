@@ -63,8 +63,48 @@ namespace DVLD_BusinessLayer
             }
         }
         //find application by person id
+        public static clsApplications FindApplicationByPersonID( int applicationPersonID )
+        {
+            int applicationID = -1;
+            DateTime applicationDate = DateTime.MinValue;
+            int applicationTypeID = -1;
+            int applicationStatus = -1;
+            DateTime lastStatusDate = DateTime.Now;
+            decimal paidFees = 0;
+            int createdByUserID = -1;
+            if ( clsApplicationsDataAccess.FindApplicationByPersonID( applicationPersonID, ref applicationID, ref applicationDate, ref applicationTypeID, ref applicationStatus, ref lastStatusDate, ref paidFees, ref createdByUserID ) )
+            {
+                return new clsApplications( applicationID, applicationPersonID, applicationDate, applicationTypeID, applicationStatus, lastStatusDate, paidFees, createdByUserID );
+            }
+            else
+            {
+                return null;
+            }
+        }
         //find application by application type id
+        public static clsApplications FindApplicationByApplicationTypeID( int applicationTypeID )
+        {
+            int applicationID = -1;
+            int applicationPersonID = -1;
+            DateTime applicationDate = DateTime.MinValue;
+            int applicationStatus = -1;
+            DateTime lastStatusDate = DateTime.Now;
+            decimal paidFees = 0;
+            int createdByUserID = -1;
+            if ( clsApplicationsDataAccess.FindApplicationByApplicationTypeID( applicationTypeID, ref applicationID, ref applicationPersonID, ref applicationDate, ref applicationStatus, ref lastStatusDate, ref paidFees, ref createdByUserID ) )
+            {
+                return new clsApplications( applicationID, applicationPersonID, applicationDate, applicationTypeID, applicationStatus, lastStatusDate, paidFees, createdByUserID );
+            }
+            else
+            {
+                return null;
+            }
+        }
         //get all applications
+        public static System.Data.DataTable GetAllApplications()
+        {
+            return clsApplicationsDataAccess.GetAllApplications();
+        }
         //add new application 
         private bool _AddNewApplication()
         {

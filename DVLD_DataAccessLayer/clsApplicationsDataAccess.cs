@@ -45,6 +45,113 @@ namespace DVLD_DataAccessLayer
             }
             return isFound;
         }
+        // find application by person id
+        public static bool FindApplicationByPersonID( int personID, ref int applicationID, ref DateTime applicationDate, ref int applicationTypeID, ref int applicationStatus, ref DateTime laststatusDate, ref decimal paidFees, ref int createdByUserId )
+        {
+            bool isFound = false;
+            SqlConnection connection = new SqlConnection( DataAccesseSettings.DVLD_String );
+            string query = "SELECT top 1 * FROM Applications WHERE ApplicantPersonID = @personID";
+            SqlCommand cmd = new SqlCommand( query, connection );
+            cmd.Parameters.AddWithValue( "@personID", personID );
+
+            try
+            {
+                connection.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+                if ( reader.Read() )
+                {
+                    isFound = true;
+                    applicationID = ( int ) reader[ "ApplicationID" ];
+                    applicationDate = ( DateTime ) reader[ "ApplicationDate" ];
+                    applicationTypeID = ( int ) reader[ "ApplicationTypeID" ];
+                    applicationStatus = ( int ) reader[ "ApplicationStatus" ];
+                    laststatusDate = ( DateTime ) reader[ "LastStatusDate" ];
+                    paidFees = ( decimal ) reader[ "PaidFees" ];
+                    createdByUserId = ( int ) reader[ "CreatedByUserID" ];
+                }
+                else
+                {
+                    isFound = false;
+                }
+                reader.Close();
+            }
+            catch ( System.Exception ex )
+            {
+
+                // isFound = false;
+            }
+            finally
+            {
+                connection.Close();
+            }
+            return isFound;
+        }
+        // find application by application type id
+        public static bool FindApplicationByApplicationTypeID( int applicationTypeID, ref int applicationID, ref int applicationPersonID, ref DateTime applicationDate, ref int applicationStatus, ref DateTime laststatusDate, ref decimal paidFees, ref int createdByUserId )
+        {
+            bool isFound = false;
+            SqlConnection connection = new SqlConnection( DataAccesseSettings.DVLD_String );
+            string query = "SELECT top 1 * FROM Applications WHERE ApplicationTypeID = @applicationTypeID";
+            SqlCommand cmd = new SqlCommand( query, connection );
+            cmd.Parameters.AddWithValue( "@applicationTypeID", applicationTypeID );
+
+            try
+            {
+                connection.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+                if ( reader.Read() )
+                {
+                    isFound = true;
+                    applicationID = ( int ) reader[ "ApplicationID" ];
+                    applicationPersonID = ( int ) reader[ "ApplicantPersonID" ];
+                    applicationDate = ( DateTime ) reader[ "ApplicationDate" ];
+                    applicationStatus = ( int ) reader[ "ApplicationStatus" ];
+                    laststatusDate = ( DateTime ) reader[ "LastStatusDate" ];
+                    paidFees = ( decimal ) reader[ "PaidFees" ];
+                    createdByUserId = ( int ) reader[ "CreatedByUserID" ];
+                }
+                else
+                {
+                    isFound = false;
+                }
+                reader.Close();
+            }
+            catch ( System.Exception ex )
+            {
+
+                // isFound = false;
+            }
+            finally
+            {
+                connection.Close();
+            }
+            return isFound;
+        }
+        // get all applications
+        public static System.Data.DataTable GetAllApplications()
+        {
+            System.Data.DataTable dt = new System.Data.DataTable();
+            SqlConnection connection = new SqlConnection( DataAccesseSettings.DVLD_String );
+            string query = "SELECT * FROM Applications";
+            SqlCommand cmd = new SqlCommand( query, connection );
+            try
+            {
+                connection.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+                dt.Load( reader );
+                reader.Close();
+            }
+            catch ( System.Exception ex )
+            {
+
+                //do nothing
+            }
+            finally
+            {
+                connection.Close();
+            }
+            return dt;
+        }
         public static int AddNewApplication( int applicationPersonID, DateTime applicationDate, int applicationTypeID, int applicationStatus, DateTime laststatusDate, decimal paidFees, int createdByUserId )
         {
             // this function returns int so we will store it in this variable

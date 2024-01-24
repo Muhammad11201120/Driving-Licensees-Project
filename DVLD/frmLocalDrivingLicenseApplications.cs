@@ -40,5 +40,11 @@ namespace DVLD
             frmNewLicenseApplication frm = new frmNewLicenseApplication( -1 );
             frm.ShowDialog();
         }
+
+        private void showLicenseDetailsToolStripMenuItem_Click( object sender, EventArgs e )
+        {
+            frmShowApplicationDetails frm = new frmShowApplicationDetails();
+            frm.ShowDialog();
+        }
     }
 }

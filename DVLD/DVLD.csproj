@@ -52,12 +52,6 @@
     <Compile Include="ctrAddEditPersonWithFilters.Designer.cs">
       <DependentUpon>ctrAddEditPersonWithFilters.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmAddEditNewLocalDrivingLicenseApplication.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmAddEditNewLocalDrivingLicenseApplication.Designer.cs">
-      <DependentUpon>frmAddEditNewLocalDrivingLicenseApplication.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmAddEditUserCredinitils.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -136,6 +130,12 @@
     <Compile Include="frmNewLicenseApplication.Designer.cs">
       <DependentUpon>frmNewLicenseApplication.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmShowApplicationDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmShowApplicationDetails.Designer.cs">
+      <DependentUpon>frmShowApplicationDetails.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmUsers.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -191,6 +191,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmNewLicenseApplication.resx">
       <DependentUpon>frmNewLicenseApplication.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmShowApplicationDetails.resx">
+      <DependentUpon>frmShowApplicationDetails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmUsers.resx">
       <DependentUpon>frmUsers.cs</DependentUpon>
@@ -364,6 +367,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Password 321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Driving License 321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\License View 321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Notes 321.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
