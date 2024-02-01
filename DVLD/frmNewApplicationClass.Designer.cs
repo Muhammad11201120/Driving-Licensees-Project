@@ -212,7 +212,6 @@
             this.Controls.Add( this.label1 );
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmNewApplicationClass";
-            this.Text = "frmNewApplicationClass";
             this.Load += new System.EventHandler( this.frmNewApplicationClass_Load );
             this.ResumeLayout( false );
             this.PerformLayout();

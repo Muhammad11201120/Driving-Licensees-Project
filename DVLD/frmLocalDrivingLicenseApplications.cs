@@ -43,8 +43,19 @@ namespace DVLD
 
         private void showLicenseDetailsToolStripMenuItem_Click( object sender, EventArgs e )
         {
-            frmShowApplicationDetails frm = new frmShowApplicationDetails();
+            frmShowApplicationDetails frm = new frmShowApplicationDetails( dataGridView1.CurrentRow.Cells[ 2 ].Value.ToString() );
             frm.ShowDialog();
+        }
+
+        private void shcduleToolStripMenuItem_Click( object sender, EventArgs e )
+        {
+            frmVisionTestAppointment frm = new frmVisionTestAppointment( dataGridView1.CurrentRow.Cells[ 2 ].Value.ToString() );
+            frm.ShowDialog();
+        }
+
+        private void scheduleStreetTestToolStripMenuItem_Click( object sender, EventArgs e )
+        {
+
         }
     }
 }

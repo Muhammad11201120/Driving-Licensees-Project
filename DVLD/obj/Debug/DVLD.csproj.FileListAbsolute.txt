@@ -28,3 +28,6 @@ D:\Programing\c#\DVLD_PROJECT\DVLD\obj\Debug\DVLD.frmNewApplicationClass.resourc
 D:\Programing\c#\DVLD_PROJECT\DVLD\obj\Debug\DVLD.ctrAddEditPersonWithFilters.resources
 D:\Programing\c#\DVLD_PROJECT\DVLD\obj\Debug\DVLD.csproj.Up2Date
 D:\Programing\c#\DVLD_PROJECT\DVLD\obj\Debug\DVLD.frmLocalDrivingLicenseApplications.resources
+D:\Programing\c#\DVLD_PROJECT\DVLD\obj\Debug\DVLD.frmShowApplicationDetails.resources
+D:\Programing\c#\DVLD_PROJECT\DVLD\obj\Debug\DVLD.ctrApplicationInfo.resources
+D:\Programing\c#\DVLD_PROJECT\DVLD\obj\Debug\DVLD.frmVisionTestAppointment.resources

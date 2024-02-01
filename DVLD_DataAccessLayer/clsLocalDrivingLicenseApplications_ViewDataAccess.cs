@@ -201,7 +201,7 @@ namespace DVLD_DataAccessLayer
         {
             bool isFound = false;
             SqlConnection connect = new SqlConnection( DataAccesseSettings.DVLD_String );
-            string query = "SELECT FOUND = 1 FROM People WHERE LocalDrivingLicenseApplicationID = @localLicenseApplicationID";
+            string query = "SELECT FOUND = 1 FROM People WHERE LocalDrivingLicenseApplications_View = @localLicenseApplicationID";
             SqlCommand cmd = new SqlCommand( query, connect );
             cmd.Parameters.AddWithValue( "@localLicenseApplicationID", localLicenseApplicationID );
             try

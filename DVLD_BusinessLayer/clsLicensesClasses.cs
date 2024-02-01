@@ -5,35 +5,39 @@ namespace DVLD_BusinessLayer
 {
     public class clsLicensesClasses
     {
-        enum _enMode
+        public enum enMode
         {
             ADDNEW = 0,
-            UPDATE = 1,
+            UPDATE = 1
         }
         public int LicenseClassID { get; set; }
         public string ClassName { get; set; }
         public string ClassDescription { get; set; }
+        public int MinimumAllowedAge { get; set; }
         public int DefaultValidationLength { get; set; }
         public decimal ClassFees { get; set; }
-        _enMode Mode = _enMode.UPDATE;
+        public enMode Mode = enMode.UPDATE;
         public clsLicensesClasses()
         {
             this.LicenseClassID = -1;
             this.ClassName = string.Empty;
             this.ClassDescription = string.Empty;
+            this.MinimumAllowedAge = 0;
             this.DefaultValidationLength = 0;
             this.ClassFees = 0;
-            Mode = _enMode.ADDNEW;
+            this.Mode = enMode.ADDNEW;
         }
-        public clsLicensesClasses( int liceneseClassID, string className, string ClassDescription, int defaultValidationLength, decimal classFees )
+        public clsLicensesClasses( int liceneseClassID, string className, string classDescription, int minimumAllowedAge, int defaultValidationLength, decimal classFees )
         {
             this.LicenseClassID = liceneseClassID;
             this.ClassName = className;
-            this.ClassDescription = ClassDescription;
+            this.ClassDescription = classDescription;
+            this.MinimumAllowedAge = minimumAllowedAge;
             this.DefaultValidationLength = defaultValidationLength;
             this.ClassFees = classFees;
+            this.Mode = enMode.UPDATE;
         }
-        public static DataTable GetAllLicenseClases()
+        public static DataTable GetAllLicenseClasses()
         {
             return clsLicensesClassesDataAccess.GetAllClasses();
         }
@@ -41,11 +45,12 @@ namespace DVLD_BusinessLayer
         {
             string className = string.Empty;
             string classDescription = string.Empty;
-            int defaultValidationLength = -1;
-            decimal classFees = -1;
-            if ( clsLicensesClassesDataAccess.FindClassByID( licenseClassID, ref className, ref classDescription, ref defaultValidationLength, ref classFees ) )
+            int minimumAllowedAge = 0;
+            int defaultValidationLength = 0;
+            decimal classFees = 0;
+            if ( clsLicensesClassesDataAccess.FindClassByID( licenseClassID, ref className, ref classDescription, ref minimumAllowedAge, ref defaultValidationLength, ref classFees ) )
             {
-                return new clsLicensesClasses( licenseClassID, className, classDescription, defaultValidationLength, classFees );
+                return new clsLicensesClasses( licenseClassID, className, classDescription, minimumAllowedAge, defaultValidationLength, classFees );
             }
             else
             {
@@ -56,49 +61,47 @@ namespace DVLD_BusinessLayer
         {
             int licenseClassID = -1;
             string classDescription = string.Empty;
+            int minumumAllowAge = -1;
             int defaultValidationLength = -1;
             decimal classFees = -1;
-            if ( clsLicensesClassesDataAccess.FindClassByName( ref licenseClassID, className, ref classDescription, ref defaultValidationLength, ref classFees ) )
+            if ( clsLicensesClassesDataAccess.FindClassByName( ref licenseClassID, className, ref classDescription, ref minumumAllowAge, ref defaultValidationLength, ref classFees ) )
             {
-                return new clsLicensesClasses( licenseClassID, className, classDescription, defaultValidationLength, classFees );
+                return new clsLicensesClasses( licenseClassID, className, classDescription, minumumAllowAge, defaultValidationLength, classFees );
             }
             else
             {
                 return null;
             }
         }
-        private bool AddNewClass()
+        //add new licenseClass
+        private bool _AddNewLicenseClass()
         {
-            this.LicenseClassID = clsLicensesClassesDataAccess.AddNewClass( this.ClassName, this.ClassDescription, this.DefaultValidationLength, this.ClassFees );
-            if ( this.LicenseClassID > 0 )
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+            LicenseClassID = clsLicensesClassesDataAccess.AddNewLicenseClass( ClassName, ClassDescription, MinimumAllowedAge, DefaultValidationLength, ClassFees );
+            return ( LicenseClassID != -1 );
         }
-        private bool UpdateClass()
+        // update LicenseClass
+        private bool _UpdateLicenseClass()
         {
-            return clsLicensesClassesDataAccess.UpdateClass( this.LicenseClassID, this.ClassName, this.ClassDescription, this.DefaultValidationLength, this.ClassFees );
+            return clsLicensesClassesDataAccess.UpdateLicenseClass( LicenseClassID, ClassName, ClassDescription, MinimumAllowedAge, DefaultValidationLength, ClassFees );
         }
+        //Save
         public bool Save()
         {
             switch ( Mode )
             {
-                case _enMode.ADDNEW:
-                    if ( AddNewClass() )
+                case enMode.ADDNEW:
+                    if ( _AddNewLicenseClass() )
                     {
-                        this.Mode = _enMode.UPDATE;
+                        this.Mode = enMode.UPDATE;
                         return true;
                     }
                     else
                     {
                         return false;
                     }
-                case _enMode.UPDATE:
-                    return UpdateClass();
+
+                case enMode.UPDATE:
+                    return _UpdateLicenseClass();
             }
             return false;
         }

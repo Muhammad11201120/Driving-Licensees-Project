@@ -25,7 +25,7 @@ namespace DVLD
         }
         private void _fillLicenseClasses()
         {
-            DataTable dt = clsLicensesClasses.GetAllLicenseClases();
+            DataTable dt = clsLicensesClasses.GetAllLicenseClasses();
             if ( dt != null )
             {
                 foreach ( DataRow row in dt.Rows )

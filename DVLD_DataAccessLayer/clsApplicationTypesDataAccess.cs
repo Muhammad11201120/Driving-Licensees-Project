@@ -10,7 +10,7 @@ namespace DVLD_DataAccessLayer
         {
             DataTable dt = new DataTable();
             SqlConnection connect = new SqlConnection( DataAccesseSettings.DVLD_String );
-            string query = "SELECT * FROM LicenseClasses";
+            string query = "SELECT * FROM ApplicationTypes";
             SqlCommand cmd = new SqlCommand( query, connect );
             try
             {

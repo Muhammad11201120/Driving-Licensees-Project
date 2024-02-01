@@ -48,6 +48,9 @@
     <Compile Include="clsCountriesDataAccsess.cs" />
     <Compile Include="clsLocalDrivingLicenseApplicationsDataAccess.cs" />
     <Compile Include="clsLocalDrivingLicenseApplications_ViewDataAccess.cs" />
+    <Compile Include="clsTestAppointmentsDataAccess.cs" />
+    <Compile Include="clsTestsDatatAccess.cs" />
+    <Compile Include="clsTestTypesDataAccess.cs" />
     <Compile Include="clsUsersDataAccess.cs" />
     <Compile Include="DataAccesseSettings.cs" />
     <Compile Include="clsPeopleDataAccess.cs" />

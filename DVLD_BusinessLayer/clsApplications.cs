@@ -86,7 +86,7 @@ namespace DVLD_BusinessLayer
         {
             int applicationID = -1;
             int applicationPersonID = -1;
-            DateTime applicationDate = DateTime.MinValue;
+            DateTime applicationDate = DateTime.Now;
             int applicationStatus = -1;
             DateTime lastStatusDate = DateTime.Now;
             decimal paidFees = 0;

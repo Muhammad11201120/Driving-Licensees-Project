@@ -126,7 +126,7 @@
             dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
             this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size( 1032, 464 );
+            this.dataGridView1.Size = new System.Drawing.Size( 1547, 464 );
             this.dataGridView1.TabIndex = 8;
             // 
             // contextMenuStrip1
@@ -145,7 +145,7 @@
             this.toolStripSeparator2,
             this.showPersonLicenseHistoryToolStripMenuItem} );
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size( 307, 322 );
+            this.contextMenuStrip1.Size = new System.Drawing.Size( 307, 300 );
             // 
             // showLicenseDetailsToolStripMenuItem
             // 
@@ -184,6 +184,7 @@
             this.shcduleToolStripMenuItem.Name = "shcduleToolStripMenuItem";
             this.shcduleToolStripMenuItem.Size = new System.Drawing.Size( 237, 38 );
             this.shcduleToolStripMenuItem.Text = "Schedule Vision Test";
+            this.shcduleToolStripMenuItem.Click += new System.EventHandler( this.shcduleToolStripMenuItem_Click );
             // 
             // toolStripSeparator6
             // 
@@ -210,6 +211,7 @@
             this.scheduleStreetTestToolStripMenuItem.Name = "scheduleStreetTestToolStripMenuItem";
             this.scheduleStreetTestToolStripMenuItem.Size = new System.Drawing.Size( 237, 38 );
             this.scheduleStreetTestToolStripMenuItem.Text = "Schedule Street Test";
+            this.scheduleStreetTestToolStripMenuItem.Click += new System.EventHandler( this.scheduleStreetTestToolStripMenuItem_Click );
             // 
             // toolStripSeparator3
             // 
@@ -282,7 +284,7 @@
             this.btnAddNewApplication.ForeColor = System.Drawing.Color.FromArgb( ( ( int ) ( ( ( byte ) ( 46 ) ) ) ), ( ( int ) ( ( ( byte ) ( 51 ) ) ) ), ( ( int ) ( ( ( byte ) ( 73 ) ) ) ) );
             this.btnAddNewApplication.Image = global::DVLD.Properties.Resources.New_Driving_License_321;
             this.btnAddNewApplication.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAddNewApplication.Location = new System.Drawing.Point( 908, 133 );
+            this.btnAddNewApplication.Location = new System.Drawing.Point( 1423, 133 );
             this.btnAddNewApplication.Name = "btnAddNewApplication";
             this.btnAddNewApplication.Size = new System.Drawing.Size( 130, 38 );
             this.btnAddNewApplication.TabIndex = 11;
@@ -297,7 +299,7 @@
             this.btnClose.ForeColor = System.Drawing.Color.FromArgb( ( ( int ) ( ( ( byte ) ( 24 ) ) ) ), ( ( int ) ( ( ( byte ) ( 30 ) ) ) ), ( ( int ) ( ( ( byte ) ( 54 ) ) ) ) );
             this.btnClose.Image = global::DVLD.Properties.Resources.cross_32;
             this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClose.Location = new System.Drawing.Point( 908, 647 );
+            this.btnClose.Location = new System.Drawing.Point( 1423, 647 );
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size( 130, 38 );
             this.btnClose.TabIndex = 10;
@@ -311,7 +313,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF( 6F, 13F );
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb( ( ( int ) ( ( ( byte ) ( 46 ) ) ) ), ( ( int ) ( ( ( byte ) ( 51 ) ) ) ), ( ( int ) ( ( ( byte ) ( 73 ) ) ) ) );
-            this.ClientSize = new System.Drawing.Size( 1050, 697 );
+            this.ClientSize = new System.Drawing.Size( 1565, 697 );
             this.Controls.Add( this.btnAddNewApplication );
             this.Controls.Add( this.btnClose );
             this.Controls.Add( this.dataGridView1 );
