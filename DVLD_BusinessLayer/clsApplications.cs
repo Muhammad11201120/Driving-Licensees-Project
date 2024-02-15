@@ -14,7 +14,7 @@ namespace DVLD_BusinessLayer
         public int applicationPersonID { get; set; }
         public DateTime applicationDate { get; set; }
         public int applicationTypeID { get; set; }
-        public int applicationStatus { get; set; }
+        public byte applicationStatus { get; set; }
         public DateTime lastStatusDate { get; set; }
         public decimal paidFees { get; set; }
         public int createdByUserID { get; set; }
@@ -25,13 +25,13 @@ namespace DVLD_BusinessLayer
             this.applicationPersonID = -1;
             this.applicationDate = DateTime.MinValue;
             this.applicationTypeID = -1;
-            this.applicationStatus = -1;
+            this.applicationStatus = 0;
             this.lastStatusDate = DateTime.Now;
             this.paidFees = 0;
             this.createdByUserID = -1;
             Mode = enMode.ADDNEW;
         }
-        public clsApplications( int applicationID, int applicationPersonID, DateTime applicationDate, int applicationTypeID, int applicationStatus, DateTime lastStatusDate, decimal paidFees, int createdByUserID )
+        public clsApplications( int applicationID, int applicationPersonID, DateTime applicationDate, int applicationTypeID, byte applicationStatus, DateTime lastStatusDate, decimal paidFees, int createdByUserID )
         {
             this.applicationID = applicationID;
             this.applicationPersonID = applicationPersonID;
@@ -49,7 +49,7 @@ namespace DVLD_BusinessLayer
             int applicationPersonID = -1;
             DateTime applicationDate = DateTime.MinValue;
             int applicationTypeID = -1;
-            int applicationStatus = -1;
+            byte applicationStatus = 0;
             DateTime lastStatusDate = DateTime.Now;
             decimal paidFees = 0;
             int createdByUserID = -1;
@@ -68,7 +68,7 @@ namespace DVLD_BusinessLayer
             int applicationID = -1;
             DateTime applicationDate = DateTime.MinValue;
             int applicationTypeID = -1;
-            int applicationStatus = -1;
+            byte applicationStatus = 0;
             DateTime lastStatusDate = DateTime.Now;
             decimal paidFees = 0;
             int createdByUserID = -1;
@@ -87,7 +87,7 @@ namespace DVLD_BusinessLayer
             int applicationID = -1;
             int applicationPersonID = -1;
             DateTime applicationDate = DateTime.Now;
-            int applicationStatus = -1;
+            byte applicationStatus = 0;
             DateTime lastStatusDate = DateTime.Now;
             decimal paidFees = 0;
             int createdByUserID = -1;
@@ -100,10 +100,44 @@ namespace DVLD_BusinessLayer
                 return null;
             }
         }
+        //find user by createdByUserID
+        //public static clsApplications FindApplicationByCreatedByUserID( int createdByUserID )
+        //{
+        //    int applicationID = -1;
+        //    int applicationPersonID = -1;
+        //    DateTime applicationDate = DateTime.Now;
+        //    int applicationTypeID = -1;
+        //    byte applicationStatus = 0;
+        //    DateTime lastStatusDate = DateTime.Now;
+        //    decimal paidFees = 0;
+        //    if ( clsApplicationsDataAccess.FindApplicationByCreatedByUserID( createdByUserID, ref applicationID, ref applicationPersonID, ref applicationDate, ref applicationTypeID, ref applicationStatus, ref lastStatusDate, ref paidFees ) )
+        //    {
+        //        return new clsApplications( applicationID, applicationPersonID, applicationDate, applicationTypeID, applicationStatus, lastStatusDate, paidFees, createdByUserID );
+        //    }
+        //    else
+        //    {
+        //        return null;
+        //    }
+        //}
         //get all applications
         public static System.Data.DataTable GetAllApplications()
         {
             return clsApplicationsDataAccess.GetAllApplications();
+        }
+        //Get All Applications By Application ID
+        public static System.Data.DataTable GetAllApplicationsByApplicationID( int applicationID )
+        {
+            return clsApplicationsDataAccess.GetAllApplicationsByApplicationID( applicationID );
+        }
+        //Get All Applications By Application Person ID
+        public static System.Data.DataTable GetAllApplicationsByApplicationPersonID( int applicationPersonID )
+        {
+            return clsApplicationsDataAccess.GetAllApplicationsByApplicationPersonID( applicationPersonID );
+        }
+        //Get All Applications By Application Type ID
+        public static System.Data.DataTable GetAllApplicationsByApplicationTypeID( int applicationTypeID )
+        {
+            return clsApplicationsDataAccess.GetAllApplicationsByApplicationTypeID( applicationTypeID );
         }
         //add new application 
         private bool _AddNewApplication()

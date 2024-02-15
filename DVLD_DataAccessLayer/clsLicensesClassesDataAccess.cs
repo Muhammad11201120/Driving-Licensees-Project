@@ -38,7 +38,7 @@ namespace DVLD_DataAccessLayer
             return dt;
         }
         //find license class by licenseclassID
-        public static bool FindClassByID( int licenseClassID, ref string className, ref string classDescription, ref int minumumAllowAge, ref int DefaultValidationLength, ref decimal classFees )
+        public static bool FindClassByID( int licenseClassID, ref string className, ref string classDescription, ref byte minumumAllowAge, ref byte DefaultValidationLength, ref decimal classFees )
         {
             bool found = false;
             SqlConnection connect = new SqlConnection( DataAccesseSettings.DVLD_String );
@@ -54,8 +54,8 @@ namespace DVLD_DataAccessLayer
                     found = true;
                     className = reader[ "ClassName" ].ToString();
                     classDescription = reader[ "ClassDescription" ].ToString();
-                    minumumAllowAge = ( int ) reader[ "MinimumAllowedAge" ];
-                    DefaultValidationLength = ( int ) reader[ "DefaultValidityLength" ];
+                    minumumAllowAge = ( byte ) reader[ "MinimumAllowedAge" ];
+                    DefaultValidationLength = ( byte ) reader[ "DefaultValidityLength" ];
                     classFees = ( decimal ) reader[ "ClassFees" ];
                 }
                 else
@@ -75,7 +75,7 @@ namespace DVLD_DataAccessLayer
             }
             return found;
         }
-        public static bool FindClassByName( ref int licenseClassID, string className, ref string classDescription, ref int minumumAllowAge, ref int DefaultValidationLength, ref decimal classFees )
+        public static bool FindClassByName( ref int licenseClassID, string className, ref string classDescription, ref byte minumumAllowAge, ref byte DefaultValidationLength, ref decimal classFees )
         {
             bool found = false;
             SqlConnection connect = new SqlConnection( DataAccesseSettings.DVLD_String );
@@ -91,8 +91,8 @@ namespace DVLD_DataAccessLayer
                     found = true;
                     licenseClassID = ( int ) reader[ "LicenseClassID" ];
                     classDescription = reader[ "ClassDescription" ].ToString();
-                    minumumAllowAge = ( int ) reader[ "MinimumAllowedAge" ];
-                    DefaultValidationLength = ( int ) reader[ "DefaultValidityLength" ];
+                    minumumAllowAge = ( byte ) reader[ "MinimumAllowedAge" ];
+                    DefaultValidationLength = ( byte ) reader[ "DefaultValidityLength" ];
                     classFees = ( decimal ) reader[ "ClassFees" ];
                 }
                 else

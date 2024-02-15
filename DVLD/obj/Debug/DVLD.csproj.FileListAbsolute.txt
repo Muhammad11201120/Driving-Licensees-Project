@@ -31,3 +31,6 @@ D:\Programing\c#\DVLD_PROJECT\DVLD\obj\Debug\DVLD.frmLocalDrivingLicenseApplicat
 D:\Programing\c#\DVLD_PROJECT\DVLD\obj\Debug\DVLD.frmShowApplicationDetails.resources
 D:\Programing\c#\DVLD_PROJECT\DVLD\obj\Debug\DVLD.ctrApplicationInfo.resources
 D:\Programing\c#\DVLD_PROJECT\DVLD\obj\Debug\DVLD.frmVisionTestAppointment.resources
+D:\Programing\c#\DVLD_PROJECT\DVLD\obj\Debug\DVLD.frmVisionTest.resources
+D:\Programing\c#\DVLD_PROJECT\DVLD\obj\Debug\DVLD.frmIssueTest.resources
+D:\Programing\c#\DVLD_PROJECT\DVLD\obj\Debug\DVLD.ctrTests.resources

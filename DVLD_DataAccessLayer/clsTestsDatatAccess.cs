@@ -22,7 +22,14 @@ namespace DVLD_DataAccessLayer
                 {
                     testAppointmentID = ( int ) reader[ "testAppointmentID" ];
                     testResult = ( bool ) reader[ "testResult" ];
-                    notes = ( string ) reader[ "notes" ];
+                    if ( reader[ "Notes" ] != DBNull.Value )
+                    {
+                        notes = ( string ) reader[ "Notes" ];
+                    }
+                    else
+                    {
+                        notes = string.Empty;
+                    }
                     createdByUserID = ( int ) reader[ "createdByUserID" ];
                     return true;
                 }
@@ -41,7 +48,7 @@ namespace DVLD_DataAccessLayer
         public static bool FindTestByTestAppointmentID( int testAppointmentID, ref int testID, ref bool testResult, ref string notes, ref int createdByUserID )
         {
             SqlConnection conn = new SqlConnection( DataAccesseSettings.DVLD_String );
-            string query = "SELECT * FROM Tests WHERE testAppointmentID = @testAppointmentID";
+            string query = "SELECT * FROM Tests WHERE testAppointmentID = @testAppointmentID ORDER BY TestID DESC";
             SqlCommand cmd = new SqlCommand( query, conn );
             cmd.Parameters.AddWithValue( "@testAppointmentID", testAppointmentID );
             try
@@ -52,7 +59,14 @@ namespace DVLD_DataAccessLayer
                 {
                     testID = ( int ) reader[ "testID" ];
                     testResult = ( bool ) reader[ "testResult" ];
-                    notes = ( string ) reader[ "notes" ];
+                    if ( reader[ "Notes" ] != DBNull.Value )
+                    {
+                        notes = ( string ) reader[ "Notes" ];
+                    }
+                    else
+                    {
+                        notes = string.Empty;
+                    }
                     createdByUserID = ( int ) reader[ "createdByUserID" ];
                     return true;
                 }
@@ -68,21 +82,31 @@ namespace DVLD_DataAccessLayer
                 conn.Close();
             }
         }
-        public static bool AddNewTest( int testAppointmentID, bool testResult, string notes, int createdByUserID )
+        public static bool FindTestByTestResult( bool testResult, ref int testID, ref int testAppointmentID, ref string notes, ref int createdByUserID )
         {
             SqlConnection conn = new SqlConnection( DataAccesseSettings.DVLD_String );
-            string query = "INSERT INTO Tests (testAppointmentID, testResult, notes, createdByUserID) VALUES (@testAppointmentID, @testResult, @notes, @createdByUserID)";
+            string query = "SELECT * FROM Tests WHERE testResult = @testResult";
             SqlCommand cmd = new SqlCommand( query, conn );
-            cmd.Parameters.AddWithValue( "@testAppointmentID", testAppointmentID );
             cmd.Parameters.AddWithValue( "@testResult", testResult );
-            cmd.Parameters.AddWithValue( "@notes", notes );
-            cmd.Parameters.AddWithValue( "@createdByUserID", createdByUserID );
             try
             {
                 conn.Open();
-                int rowsAffected = cmd.ExecuteNonQuery();
-                if ( rowsAffected == 1 )
+                SqlDataReader reader = cmd.ExecuteReader();
+                if ( reader.Read() )
+                {
+                    testID = ( int ) reader[ "testID" ];
+                    testAppointmentID = ( int ) reader[ "testAppointmentID" ];
+                    if ( reader[ "Notes" ] != DBNull.Value )
+                    {
+                        notes = ( string ) reader[ "Notes" ];
+                    }
+                    else
+                    {
+                        notes = string.Empty;
+                    }
+                    createdByUserID = ( int ) reader[ "createdByUserID" ];
                     return true;
+                }
                 else
                     return false;
             }
@@ -95,6 +119,42 @@ namespace DVLD_DataAccessLayer
                 conn.Close();
             }
         }
+        public static int AddNewTest( int testAppointmentID, bool testResult, string notes, int createdByUserID )
+        {
+            int testID = -1;
+            SqlConnection conn = new SqlConnection( DataAccesseSettings.DVLD_String );
+            string query = "INSERT INTO Tests (testAppointmentID, testResult, notes, createdByUserID) VALUES (@testAppointmentID, @testResult, @notes, @createdByUserID);SELECT SCOPE_IDENTITY();";
+            SqlCommand cmd = new SqlCommand( query, conn );
+            cmd.Parameters.AddWithValue( "@testAppointmentID", testAppointmentID );
+            cmd.Parameters.AddWithValue( "@testResult", testResult );
+            if ( notes != "" )
+            {
+                cmd.Parameters.AddWithValue( "@notes", notes );
+            }
+            else
+            {
+                cmd.Parameters.AddWithValue( "@notes", System.DBNull.Value );
+            }
+            cmd.Parameters.AddWithValue( "@createdByUserID", createdByUserID );
+            try
+            {
+                conn.Open();
+                object result = cmd.ExecuteScalar();
+                if ( result != null && int.TryParse( result.ToString(), out int insertedID ) )
+                {
+                    testID = insertedID;
+                }
+            }
+            catch ( Exception ex )
+            {
+                throw ex;
+            }
+            finally
+            {
+                conn.Close();
+            }
+            return testID;
+        }
         public static bool UpdateTest( int testID, int testAppointmentID, bool testResult, string notes, int createdByUserID )
         {
             SqlConnection conn = new SqlConnection( DataAccesseSettings.DVLD_String );
@@ -103,7 +163,14 @@ namespace DVLD_DataAccessLayer
             cmd.Parameters.AddWithValue( "@testID", testID );
             cmd.Parameters.AddWithValue( "@testAppointmentID", testAppointmentID );
             cmd.Parameters.AddWithValue( "@testResult", testResult );
-            cmd.Parameters.AddWithValue( "@notes", notes );
+            if ( notes != "" )
+            {
+                cmd.Parameters.AddWithValue( "@notes", notes );
+            }
+            else
+            {
+                cmd.Parameters.AddWithValue( "@notes", System.DBNull.Value );
+            }
             cmd.Parameters.AddWithValue( "@createdByUserID", createdByUserID );
             try
             {

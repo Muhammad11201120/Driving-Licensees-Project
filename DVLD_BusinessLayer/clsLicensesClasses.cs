@@ -13,8 +13,8 @@ namespace DVLD_BusinessLayer
         public int LicenseClassID { get; set; }
         public string ClassName { get; set; }
         public string ClassDescription { get; set; }
-        public int MinimumAllowedAge { get; set; }
-        public int DefaultValidationLength { get; set; }
+        public byte MinimumAllowedAge { get; set; }
+        public byte DefaultValidationLength { get; set; }
         public decimal ClassFees { get; set; }
         public enMode Mode = enMode.UPDATE;
         public clsLicensesClasses()
@@ -27,7 +27,7 @@ namespace DVLD_BusinessLayer
             this.ClassFees = 0;
             this.Mode = enMode.ADDNEW;
         }
-        public clsLicensesClasses( int liceneseClassID, string className, string classDescription, int minimumAllowedAge, int defaultValidationLength, decimal classFees )
+        public clsLicensesClasses( int liceneseClassID, string className, string classDescription, byte minimumAllowedAge, byte defaultValidationLength, decimal classFees )
         {
             this.LicenseClassID = liceneseClassID;
             this.ClassName = className;
@@ -45,8 +45,8 @@ namespace DVLD_BusinessLayer
         {
             string className = string.Empty;
             string classDescription = string.Empty;
-            int minimumAllowedAge = 0;
-            int defaultValidationLength = 0;
+            byte minimumAllowedAge = 0;
+            byte defaultValidationLength = 0;
             decimal classFees = 0;
             if ( clsLicensesClassesDataAccess.FindClassByID( licenseClassID, ref className, ref classDescription, ref minimumAllowedAge, ref defaultValidationLength, ref classFees ) )
             {
@@ -61,8 +61,8 @@ namespace DVLD_BusinessLayer
         {
             int licenseClassID = -1;
             string classDescription = string.Empty;
-            int minumumAllowAge = -1;
-            int defaultValidationLength = -1;
+            byte minumumAllowAge = 0;
+            byte defaultValidationLength = 0;
             decimal classFees = -1;
             if ( clsLicensesClassesDataAccess.FindClassByName( ref licenseClassID, className, ref classDescription, ref minumumAllowAge, ref defaultValidationLength, ref classFees ) )
             {

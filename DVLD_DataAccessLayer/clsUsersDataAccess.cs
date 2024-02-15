@@ -43,7 +43,7 @@ namespace DVLD_DataAccessLayer
         {
             bool isFound = false;
             SqlConnection connection = new SqlConnection( DataAccesseSettings.DVLD_String );
-            string query = "SELECT top 1 * FROM Users WHERE UserID = @userID";
+            string query = "SELECT TOP 1 * FROM Users WHERE UserID = @userID";
             SqlCommand cmd = new SqlCommand( query, connection );
             cmd.Parameters.AddWithValue( "@userID", userID );
             try
@@ -56,7 +56,7 @@ namespace DVLD_DataAccessLayer
                     personID = ( int ) reader[ "PersonID" ];
                     userName = ( string ) reader[ "UserName" ];
                     password = ( string ) reader[ "Password" ];
-                    isActive = ( bool ) reader[ "IsAvtive" ];
+                    isActive = ( bool ) reader[ "IsActive" ];
 
                 }
                 reader.Close();

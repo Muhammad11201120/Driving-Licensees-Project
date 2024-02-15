@@ -10,6 +10,12 @@ namespace DVLD_BusinessLayer
 {
     public class clsTestTypes
     {
+        public enum enTestTypes
+        {
+            VisionTest = 1,
+            WrittenTest = 2,
+            DrivingTest = 3
+        }
         public int testTypeID { get; set; }
         public string testTypeTitle { get; set; }
         public string testTypeDescription { get; set; }

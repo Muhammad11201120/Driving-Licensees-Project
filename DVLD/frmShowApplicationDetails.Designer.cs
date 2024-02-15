@@ -29,6 +29,11 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.pboxPersonImage = new System.Windows.Forms.PictureBox();
+            this.lblGendor = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.lblPhone = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.lblEmail = new System.Windows.Forms.Label();
             this.lblDateOfBirth = new System.Windows.Forms.Label();
             this.lblNationalNumberValue = new System.Windows.Forms.Label();
@@ -50,17 +55,12 @@
             this.lblApplicationIDValue = new System.Windows.Forms.Label();
             this.lblApplicationType = new System.Windows.Forms.Label();
             this.lblApplicationID = new System.Windows.Forms.Label();
-            this.lblPhone = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.lblGendor = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pboxPersonImage = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pboxPersonImage)).BeginInit();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pboxPersonImage)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -81,10 +81,60 @@
             this.groupBox1.ForeColor = System.Drawing.Color.White;
             this.groupBox1.Location = new System.Drawing.Point(12, 272);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1017, 254);
+            this.groupBox1.Size = new System.Drawing.Size(1123, 254);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Personal Info : ";
+            // 
+            // pboxPersonImage
+            // 
+            this.pboxPersonImage.Image = global::DVLD.Properties.Resources.Local_Driving_License_512;
+            this.pboxPersonImage.Location = new System.Drawing.Point(887, 19);
+            this.pboxPersonImage.Name = "pboxPersonImage";
+            this.pboxPersonImage.Size = new System.Drawing.Size(230, 137);
+            this.pboxPersonImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pboxPersonImage.TabIndex = 15;
+            this.pboxPersonImage.TabStop = false;
+            // 
+            // lblGendor
+            // 
+            this.lblGendor.AutoSize = true;
+            this.lblGendor.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGendor.Location = new System.Drawing.Point(534, 139);
+            this.lblGendor.Name = "lblGendor";
+            this.lblGendor.Size = new System.Drawing.Size(26, 17);
+            this.lblGendor.TabIndex = 14;
+            this.lblGendor.Text = "???";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(473, 139);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(63, 17);
+            this.label10.TabIndex = 13;
+            this.label10.Text = "Gender : ";
+            // 
+            // lblPhone
+            // 
+            this.lblPhone.AutoSize = true;
+            this.lblPhone.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPhone.Location = new System.Drawing.Point(534, 91);
+            this.lblPhone.Name = "lblPhone";
+            this.lblPhone.Size = new System.Drawing.Size(26, 17);
+            this.lblPhone.TabIndex = 12;
+            this.lblPhone.Text = "???";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(473, 91);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(58, 17);
+            this.label8.TabIndex = 11;
+            this.label8.Text = "Phone : ";
             // 
             // lblEmail
             // 
@@ -225,7 +275,7 @@
             this.groupBox2.ForeColor = System.Drawing.Color.White;
             this.groupBox2.Location = new System.Drawing.Point(12, 532);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1017, 200);
+            this.groupBox2.Size = new System.Drawing.Size(1123, 200);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "License Info : ";
@@ -310,52 +360,12 @@
             this.lblApplicationID.TabIndex = 12;
             this.lblApplicationID.Text = "Application ID : ";
             // 
-            // lblPhone
-            // 
-            this.lblPhone.AutoSize = true;
-            this.lblPhone.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPhone.Location = new System.Drawing.Point(534, 91);
-            this.lblPhone.Name = "lblPhone";
-            this.lblPhone.Size = new System.Drawing.Size(26, 17);
-            this.lblPhone.TabIndex = 12;
-            this.lblPhone.Text = "???";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(473, 91);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(58, 17);
-            this.label8.TabIndex = 11;
-            this.label8.Text = "Phone : ";
-            // 
-            // lblGendor
-            // 
-            this.lblGendor.AutoSize = true;
-            this.lblGendor.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGendor.Location = new System.Drawing.Point(534, 139);
-            this.lblGendor.Name = "lblGendor";
-            this.lblGendor.Size = new System.Drawing.Size(26, 17);
-            this.lblGendor.TabIndex = 14;
-            this.lblGendor.Text = "???";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(473, 139);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(63, 17);
-            this.label10.TabIndex = 13;
-            this.label10.Text = "Gender : ";
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(377, 187);
+            this.label7.Location = new System.Drawing.Point(483, 179);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(225, 28);
             this.label7.TabIndex = 2;
@@ -364,29 +374,19 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::DVLD.Properties.Resources.Local_Driving_License_512;
-            this.pictureBox1.Location = new System.Drawing.Point(326, 25);
+            this.pictureBox1.Location = new System.Drawing.Point(435, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(324, 140);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
-            // pboxPersonImage
-            // 
-            this.pboxPersonImage.Image = global::DVLD.Properties.Resources.Local_Driving_License_512;
-            this.pboxPersonImage.Location = new System.Drawing.Point(781, 19);
-            this.pboxPersonImage.Name = "pboxPersonImage";
-            this.pboxPersonImage.Size = new System.Drawing.Size(230, 137);
-            this.pboxPersonImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pboxPersonImage.TabIndex = 15;
-            this.pboxPersonImage.TabStop = false;
-            // 
             // frmShowApplicationDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.ClientSize = new System.Drawing.Size(1041, 887);
+            this.ClientSize = new System.Drawing.Size(1147, 887);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.groupBox2);
@@ -396,10 +396,10 @@
             this.Load += new System.EventHandler(this.frmShowApplicationDetails_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pboxPersonImage)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pboxPersonImage)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

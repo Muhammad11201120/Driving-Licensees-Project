@@ -29,11 +29,11 @@ namespace DVLD_BusinessLayer
             this.Mode = enMode.UPDATE;
         }
 
-        public DataTable GetAllLocalDrivingLicenseApplications()
+        public static DataTable GetAllLocalDrivingLicenseApplications()
         {
             return clsLocalDrivingLicenseApplicationsDataAccess.GetAllLocalDrivingLicesnseApllications();
         }
-        public clsLocalDrivingLicenseApplications FindLocalDrivingLicenseApplicationByID( int LocalDrivingLicenseApplicationID )
+        public static clsLocalDrivingLicenseApplications FindLocalDrivingLicenseApplicationByID( int LocalDrivingLicenseApplicationID )
         {
             int licenseClassID = -1;
             int applicationID = -1;

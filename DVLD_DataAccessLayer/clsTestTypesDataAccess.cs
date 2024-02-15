@@ -13,7 +13,7 @@ namespace DVLD_DataAccessLayer
         {
             SqlConnection con = new SqlConnection( DataAccesseSettings.DVLD_String );
             string query = "SELECT TOP 1 * FROM TestTypes WHERE TestTypeID = @testTypeID";
-            SqlCommand cmd = new SqlCommand( "FindTestTypeByTestTypeID", con );
+            SqlCommand cmd = new SqlCommand( query, con );
             cmd.Parameters.AddWithValue( "@testTypeID", testTypeID );
             try
             {

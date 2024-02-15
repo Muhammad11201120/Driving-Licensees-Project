@@ -58,6 +58,12 @@
     <Compile Include="ctrApplicationInfo.Designer.cs">
       <DependentUpon>ctrApplicationInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="ctrTests.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrTests.Designer.cs">
+      <DependentUpon>ctrTests.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmAddEditUserCredinitils.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +93,12 @@
     </Compile>
     <Compile Include="frmEditApplicationTypes.Designer.cs">
       <DependentUpon>frmEditApplicationTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmIssueTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIssueTest.Designer.cs">
+      <DependentUpon>frmIssueTest.cs</DependentUpon>
     </Compile>
     <Compile Include="frmLocalDrivingLicenseApplications.cs">
       <SubType>Form</SubType>
@@ -148,6 +160,12 @@
     <Compile Include="frmUsers.Designer.cs">
       <DependentUpon>frmUsers.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmVisionTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVisionTest.Designer.cs">
+      <DependentUpon>frmVisionTest.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmVisionTestAppointment.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -168,6 +186,9 @@
     <EmbeddedResource Include="ctrApplicationInfo.resx">
       <DependentUpon>ctrApplicationInfo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ctrTests.resx">
+      <DependentUpon>ctrTests.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmAddEditUserCredinitils.resx">
       <DependentUpon>frmAddEditUserCredinitils.cs</DependentUpon>
     </EmbeddedResource>
@@ -182,6 +203,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmEditApplicationTypes.resx">
       <DependentUpon>frmEditApplicationTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIssueTest.resx">
+      <DependentUpon>frmIssueTest.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLocalDrivingLicenseApplications.resx">
       <DependentUpon>frmLocalDrivingLicenseApplications.cs</DependentUpon>
@@ -212,6 +236,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmUsers.resx">
       <DependentUpon>frmUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVisionTest.resx">
+      <DependentUpon>frmVisionTest.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmVisionTestAppointment.resx">
       <DependentUpon>frmVisionTestAppointment.cs</DependentUpon>
@@ -403,6 +430,42 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Vision 512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vision 5121.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Schedule Test 512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Notes 322.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ApplicationType1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LocalDriving License.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Street Test 321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Count 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Driving License 322.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Written Test 512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\driving-test 512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete 32 2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
