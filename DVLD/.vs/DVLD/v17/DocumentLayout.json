@@ -3,15 +3,15 @@
   "WorkspaceRootPath": "D:\\Programing\\c#\\DVLD_PROJECT\\DVLD\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{3200D117-401D-4F11-814E-AA0CAD81AACB}|DVLD.csproj|d:\\programing\\c#\\dvld_project\\dvld\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3200D117-401D-4F11-814E-AA0CAD81AACB}|DVLD.csproj|solutionrelative:frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3200D117-401D-4F11-814E-AA0CAD81AACB}|DVLD.csproj|d:\\programing\\c#\\dvld_project\\dvld\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{3200D117-401D-4F11-814E-AA0CAD81AACB}|DVLD.csproj|solutionrelative:frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3200D117-401D-4F11-814E-AA0CAD81AACB}|DVLD.csproj|D:\\Programing\\c#\\DVLD_PROJECT\\DVLD\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{3200D117-401D-4F11-814E-AA0CAD81AACB}|DVLD.csproj|solutionrelative:frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3200D117-401D-4F11-814E-AA0CAD81AACB}|DVLD.csproj|d:\\programing\\c#\\dvld_project\\dvld\\ctrfindlicensewithfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3200D117-401D-4F11-814E-AA0CAD81AACB}|DVLD.csproj|D:\\Programing\\c#\\DVLD_PROJECT\\DVLD\\ctrfindlicensewithfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3200D117-401D-4F11-814E-AA0CAD81AACB}|DVLD.csproj|solutionrelative:ctrfindlicensewithfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -312,6 +312,18 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "frmMain.cs [Design]",
+              "DocumentMoniker": "D:\\Programing\\c#\\DVLD_PROJECT\\DVLD\\frmMain.cs",
+              "RelativeDocumentMoniker": "frmMain.cs",
+              "ToolTip": "D:\\Programing\\c#\\DVLD_PROJECT\\DVLD\\frmMain.cs [Design]",
+              "RelativeToolTip": "frmMain.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-02T17:32:23.158Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "frmLogin.cs [Design]",
               "DocumentMoniker": "D:\\Programing\\c#\\DVLD_PROJECT\\DVLD\\frmLogin.cs",
               "RelativeDocumentMoniker": "frmLogin.cs",
@@ -320,17 +332,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-02T16:59:22.025Z",
               "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "frmReleaseDetainedLicense.cs [Design]",
-              "DocumentMoniker": "D:\\Programing\\c#\\DVLD_PROJECT\\DVLD\\frmReleaseDetainedLicense.cs",
-              "RelativeDocumentMoniker": "frmReleaseDetainedLicense.cs",
-              "ToolTip": "D:\\Programing\\c#\\DVLD_PROJECT\\DVLD\\frmReleaseDetainedLicense.cs [Design]",
-              "RelativeToolTip": "frmReleaseDetainedLicense.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-02T12:10:11.793Z"
             },
             {
               "$type": "Document",
@@ -400,8 +401,7 @@
               "ToolTip": "D:\\Programing\\c#\\DVLD_PROJECT\\DVLD\\ctrFindLicenseWithFilter.cs [Design]",
               "RelativeToolTip": "ctrFindLicenseWithFilter.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-25T11:51:44.835Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-02-25T11:51:44.835Z"
             },
             {
               "$type": "Document",
@@ -413,20 +413,18 @@
               "RelativeToolTip": "ctrFindLicenseWithFilter.cs",
               "ViewState": "AQIAAEwAAAAAAAAAAAA7wHkAAABGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-25T21:37:37.158Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-25T21:37:37.158Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "frmMain.cs [Design]",
-              "DocumentMoniker": "D:\\Programing\\c#\\DVLD_PROJECT\\DVLD\\frmMain.cs",
-              "RelativeDocumentMoniker": "frmMain.cs",
-              "ToolTip": "D:\\Programing\\c#\\DVLD_PROJECT\\DVLD\\frmMain.cs [Design]",
-              "RelativeToolTip": "frmMain.cs [Design]",
+              "DocumentIndex": 7,
+              "Title": "frmReleaseDetainedLicense.cs [Design]",
+              "DocumentMoniker": "D:\\Programing\\c#\\DVLD_PROJECT\\DVLD\\frmReleaseDetainedLicense.cs",
+              "RelativeDocumentMoniker": "frmReleaseDetainedLicense.cs",
+              "ToolTip": "D:\\Programing\\c#\\DVLD_PROJECT\\DVLD\\frmReleaseDetainedLicense.cs [Design]",
+              "RelativeToolTip": "frmReleaseDetainedLicense.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-29T22:49:23.984Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-03-02T12:10:11.793Z"
             },
             {
               "$type": "Document",
