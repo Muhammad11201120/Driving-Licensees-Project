@@ -146,10 +146,11 @@
             // 
             // cmxCountry
             // 
+            this.cmxCountry.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmxCountry.FormattingEnabled = true;
             this.cmxCountry.Location = new System.Drawing.Point(143, 693);
             this.cmxCountry.Name = "cmxCountry";
-            this.cmxCountry.Size = new System.Drawing.Size(239, 21);
+            this.cmxCountry.Size = new System.Drawing.Size(239, 24);
             this.cmxCountry.TabIndex = 167;
             // 
             // lblCountry
@@ -194,9 +195,10 @@
             // 
             // txtEmail
             // 
+            this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail.Location = new System.Drawing.Point(586, 364);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(262, 20);
+            this.txtEmail.Size = new System.Drawing.Size(262, 22);
             this.txtEmail.TabIndex = 171;
             this.txtEmail.Leave += new System.EventHandler(this.txtEmail_Leave);
             // 
@@ -224,9 +226,10 @@
             // 
             // txtAddress
             // 
+            this.txtAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAddress.Location = new System.Drawing.Point(586, 261);
             this.txtAddress.Name = "txtAddress";
-            this.txtAddress.Size = new System.Drawing.Size(262, 20);
+            this.txtAddress.Size = new System.Drawing.Size(262, 22);
             this.txtAddress.TabIndex = 169;
             // 
             // lblAddress
@@ -242,9 +245,10 @@
             // 
             // txtPhone
             // 
+            this.txtPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPhone.Location = new System.Drawing.Point(586, 314);
             this.txtPhone.Name = "txtPhone";
-            this.txtPhone.Size = new System.Drawing.Size(262, 20);
+            this.txtPhone.Size = new System.Drawing.Size(262, 22);
             this.txtPhone.TabIndex = 170;
             // 
             // lblNationalID
@@ -260,17 +264,19 @@
             // 
             // txtNationalID
             // 
+            this.txtNationalID.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNationalID.Location = new System.Drawing.Point(143, 314);
             this.txtNationalID.Name = "txtNationalID";
-            this.txtNationalID.Size = new System.Drawing.Size(239, 20);
+            this.txtNationalID.Size = new System.Drawing.Size(239, 22);
             this.txtNationalID.TabIndex = 161;
             this.txtNationalID.Leave += new System.EventHandler(this.txtNationalID_Leave);
             // 
             // txtId
             // 
+            this.txtId.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtId.Location = new System.Drawing.Point(143, 261);
             this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(239, 20);
+            this.txtId.Size = new System.Drawing.Size(239, 22);
             this.txtId.TabIndex = 160;
             // 
             // lblLastName
@@ -286,9 +292,10 @@
             // 
             // txtLastName
             // 
+            this.txtLastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLastName.Location = new System.Drawing.Point(143, 526);
             this.txtLastName.Name = "txtLastName";
-            this.txtLastName.Size = new System.Drawing.Size(239, 20);
+            this.txtLastName.Size = new System.Drawing.Size(239, 22);
             this.txtLastName.TabIndex = 165;
             // 
             // lblSecondName
@@ -304,9 +311,10 @@
             // 
             // txtSecondName
             // 
+            this.txtSecondName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSecondName.Location = new System.Drawing.Point(143, 420);
             this.txtSecondName.Name = "txtSecondName";
-            this.txtSecondName.Size = new System.Drawing.Size(239, 20);
+            this.txtSecondName.Size = new System.Drawing.Size(239, 22);
             this.txtSecondName.TabIndex = 163;
             // 
             // lblThirdName
@@ -322,9 +330,10 @@
             // 
             // txtThirdName
             // 
+            this.txtThirdName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtThirdName.Location = new System.Drawing.Point(143, 473);
             this.txtThirdName.Name = "txtThirdName";
-            this.txtThirdName.Size = new System.Drawing.Size(239, 20);
+            this.txtThirdName.Size = new System.Drawing.Size(239, 22);
             this.txtThirdName.TabIndex = 164;
             // 
             // lblFirstNaame
@@ -340,9 +349,10 @@
             // 
             // txtFirstName
             // 
+            this.txtFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFirstName.Location = new System.Drawing.Point(143, 367);
             this.txtFirstName.Name = "txtFirstName";
-            this.txtFirstName.Size = new System.Drawing.Size(239, 20);
+            this.txtFirstName.Size = new System.Drawing.Size(239, 22);
             this.txtFirstName.TabIndex = 162;
             // 
             // pictureBox2
@@ -474,7 +484,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.Controls.Add(this.lblUserId);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.lblMode);

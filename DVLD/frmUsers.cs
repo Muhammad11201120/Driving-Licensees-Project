@@ -109,5 +109,17 @@ namespace DVLD
                 }
             }
         }
+
+        private void sHOWDETAILSToolStripMenuItem_Click( object sender, EventArgs e )
+        {
+            frmAddNewUser frm = new frmAddNewUser( ( int ) dgvUsers.CurrentRow.Cells[ 1 ].Value );
+            frm.ShowDialog();
+        }
+
+        private void aDDNEWPERSONToolStripMenuItem_Click( object sender, EventArgs e )
+        {
+            frmAddNewUser frm = new frmAddNewUser( -1 );
+            frm.ShowDialog();
+        }
     }
 }

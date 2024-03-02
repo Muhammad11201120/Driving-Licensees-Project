@@ -34,7 +34,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvUsers = new System.Windows.Forms.DataGridView();
             this.EditDeleteMenueStripe = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.btnClose = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.cbxFilters = new System.Windows.Forms.ComboBox();
             this.txtFilter = new System.Windows.Forms.TextBox();
@@ -43,6 +42,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnClose = new System.Windows.Forms.Button();
             this.btnAddUser = new System.Windows.Forms.Button();
             this.eDITToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dELETEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -115,21 +115,6 @@
             this.EditDeleteMenueStripe.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
             this.EditDeleteMenueStripe.Size = new System.Drawing.Size(181, 160);
             // 
-            // btnClose
-            // 
-            this.btnClose.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClose.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
-            this.btnClose.Image = global::DVLD.Properties.Resources.cross_32;
-            this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClose.Location = new System.Drawing.Point(1320, 62);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(128, 52);
-            this.btnClose.TabIndex = 2;
-            this.btnClose.Text = "CLOSE";
-            this.btnClose.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnClose.UseVisualStyleBackColor = true;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -179,7 +164,7 @@
             this.lblRecords.AutoSize = true;
             this.lblRecords.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRecords.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblRecords.Location = new System.Drawing.Point(98, 104);
+            this.lblRecords.Location = new System.Drawing.Point(103, 20);
             this.lblRecords.Name = "lblRecords";
             this.lblRecords.Size = new System.Drawing.Size(17, 19);
             this.lblRecords.TabIndex = 10;
@@ -190,7 +175,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label2.Location = new System.Drawing.Point(3, 104);
+            this.label2.Location = new System.Drawing.Point(8, 20);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(89, 19);
             this.label2.TabIndex = 9;
@@ -222,17 +207,32 @@
             this.panel2.Size = new System.Drawing.Size(1460, 126);
             this.panel2.TabIndex = 12;
             // 
+            // btnClose
+            // 
+            this.btnClose.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.btnClose.Image = global::DVLD.Properties.Resources.cross_32;
+            this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnClose.Location = new System.Drawing.Point(1361, 3);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(87, 52);
+            this.btnClose.TabIndex = 2;
+            this.btnClose.Text = "CLOSE";
+            this.btnClose.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
             // btnAddUser
             // 
             this.btnAddUser.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
-            this.btnAddUser.Image = global::DVLD.Properties.Resources.Add_New_User_32;
+            this.btnAddUser.Image = global::DVLD.Properties.Resources.Add_Person_40;
             this.btnAddUser.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAddUser.Location = new System.Drawing.Point(1320, 71);
+            this.btnAddUser.Location = new System.Drawing.Point(1361, 71);
             this.btnAddUser.Name = "btnAddUser";
-            this.btnAddUser.Size = new System.Drawing.Size(128, 52);
+            this.btnAddUser.Size = new System.Drawing.Size(87, 52);
             this.btnAddUser.TabIndex = 1;
-            this.btnAddUser.Text = "ADD USER";
+            this.btnAddUser.Text = "ADD ";
             this.btnAddUser.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAddUser.UseVisualStyleBackColor = true;
             this.btnAddUser.Click += new System.EventHandler(this.btnAddUser_Click);
@@ -259,6 +259,7 @@
             this.aDDNEWPERSONToolStripMenuItem.Name = "aDDNEWPERSONToolStripMenuItem";
             this.aDDNEWPERSONToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
             this.aDDNEWPERSONToolStripMenuItem.Text = "ADD NEW USER";
+            this.aDDNEWPERSONToolStripMenuItem.Click += new System.EventHandler(this.aDDNEWPERSONToolStripMenuItem_Click);
             // 
             // sHOWDETAILSToolStripMenuItem
             // 
@@ -266,6 +267,7 @@
             this.sHOWDETAILSToolStripMenuItem.Name = "sHOWDETAILSToolStripMenuItem";
             this.sHOWDETAILSToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
             this.sHOWDETAILSToolStripMenuItem.Text = "SHOW DETAILS";
+            this.sHOWDETAILSToolStripMenuItem.Click += new System.EventHandler(this.sHOWDETAILSToolStripMenuItem_Click);
             // 
             // sENDEMAILToolStripMenuItem
             // 
@@ -292,7 +294,7 @@
             this.Controls.Add(this.dgvUsers);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmUsers";
-            this.Text = "frmUsers";
+            this.Text = "Form Users";
             this.Load += new System.EventHandler(this.frmUsers_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsers)).EndInit();
             this.EditDeleteMenueStripe.ResumeLayout(false);

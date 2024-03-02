@@ -34,3 +34,15 @@ D:\Programing\c#\DVLD_PROJECT\DVLD\obj\Debug\DVLD.frmVisionTestAppointment.resou
 D:\Programing\c#\DVLD_PROJECT\DVLD\obj\Debug\DVLD.frmVisionTest.resources
 D:\Programing\c#\DVLD_PROJECT\DVLD\obj\Debug\DVLD.frmIssueTest.resources
 D:\Programing\c#\DVLD_PROJECT\DVLD\obj\Debug\DVLD.ctrTests.resources
+D:\Programing\c#\DVLD_PROJECT\DVLD\obj\Debug\DVLD.frmDrivers.resources
+D:\Programing\c#\DVLD_PROJECT\DVLD\obj\Debug\DVLD.frmIssueLicense.resources
+D:\Programing\c#\DVLD_PROJECT\DVLD\obj\Debug\DVLD.frmLicenseInfo.resources
+D:\Programing\c#\DVLD_PROJECT\DVLD\obj\Debug\DVLD.frmShowLicenseHistory.resources
+D:\Programing\c#\DVLD_PROJECT\DVLD\obj\Debug\DVLD.ctrFindLicenseWithFilter.resources
+D:\Programing\c#\DVLD_PROJECT\DVLD\obj\Debug\DVLD.frmNewInternationalLicenseApplication.resources
+D:\Programing\c#\DVLD_PROJECT\DVLD\obj\Debug\DVLD.frmManageInternationalLicenses.resources
+D:\Programing\c#\DVLD_PROJECT\DVLD\obj\Debug\DVLD.frmRenewLicenseApplicationcs.resources
+D:\Programing\c#\DVLD_PROJECT\DVLD\obj\Debug\DVLD.frmReplacementForDamagedOrLostLicense.resources
+D:\Programing\c#\DVLD_PROJECT\DVLD\obj\Debug\DVLD.frmDetainLicense.resources
+D:\Programing\c#\DVLD_PROJECT\DVLD\obj\Debug\DVLD.frmManageDetainedLicenses.resources
+D:\Programing\c#\DVLD_PROJECT\DVLD\obj\Debug\DVLD.frmReleaseDetainedLicense.resources

@@ -41,7 +41,7 @@ namespace DVLD_DataAccessLayer
         {
             bool isFound = false;
             SqlConnection connection = new SqlConnection( DataAccesseSettings.DVLD_String );
-            string query = "SELECT top 1 * FROM LocalDrivingLicenseApplications WHERE LocalDrivingLicenseApplicationID = @localDrivingLicenseApplicationID";
+            string query = "SELECT TOP 1 * FROM LocalDrivingLicenseApplications WHERE LocalDrivingLicenseApplicationID = @localDrivingLicenseApplicationID";
             SqlCommand cmd = new SqlCommand( query, connection );
             cmd.Parameters.AddWithValue( "@localDrivingLicenseApplicationID", localDrivingLicenseApplicationID );
 
@@ -63,7 +63,7 @@ namespace DVLD_DataAccessLayer
             }
             catch ( System.Exception ex )
             {
-                isFound = false;
+                //
             }
             finally
             {
@@ -110,7 +110,7 @@ namespace DVLD_DataAccessLayer
         {
             bool isFound = false;
             SqlConnection connection = new SqlConnection( DataAccesseSettings.DVLD_String );
-            string query = "SELECT top 1 * FROM LocalDrivingLicenseApplications WHERE ApplicationID = @applicationID";
+            string query = "SELECT top 1 * FROM LocalDrivingLicenseApplications WHERE ApplicationID = @applicationID ORDER BY ApplicationID DESC";
             SqlCommand cmd = new SqlCommand( query, connection );
             cmd.Parameters.AddWithValue( "@applicationID", applicationID );
 

@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Data;
+using System.Runtime.Remoting.Messaging;
 namespace DVLD_DataAccessLayer
 {
     public class clsTestTypesDataAccess
@@ -44,6 +45,7 @@ namespace DVLD_DataAccessLayer
         }
         public static bool FindTestTypeByTestTypeTitle( string testTypeTitle, ref int testTypeID, ref string testTypeDescription, ref decimal testFees )
         {
+            bool isFound = false;
             SqlConnection con = new SqlConnection( DataAccesseSettings.DVLD_String );
             string query = "SELECT TOP 1 * FROM TestTypes WHERE TestTypeTitle = @testTypeTitle";
             SqlCommand cmd = new SqlCommand( query, con );
@@ -54,14 +56,10 @@ namespace DVLD_DataAccessLayer
                 SqlDataReader reader = cmd.ExecuteReader();
                 if ( reader.Read() )
                 {
+                    isFound = true;
                     testTypeID = int.Parse( reader[ "TestTypeID" ].ToString() );
                     testTypeDescription = reader[ "TestTypeDescription" ].ToString();
                     testFees = decimal.Parse( reader[ "TestTypeFees" ].ToString() );
-                    return true;
-                }
-                else
-                {
-                    return false;
                 }
             }
             catch ( Exception ex )
@@ -72,6 +70,7 @@ namespace DVLD_DataAccessLayer
             {
                 con.Close();
             }
+            return isFound;
         }
         public static DataTable GetAllTestTypes()
         {

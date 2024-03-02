@@ -37,7 +37,7 @@ namespace DVLD_DataAccessLayer
             catch ( System.Exception ex )
             {
 
-                // isFound = false;
+                throw ex;
             }
             finally
             {
@@ -50,7 +50,7 @@ namespace DVLD_DataAccessLayer
         {
             bool isFound = false;
             SqlConnection connection = new SqlConnection( DataAccesseSettings.DVLD_String );
-            string query = "SELECT TOP 1 * FROM Applications WHERE ApplicantPersonID = @personID";
+            string query = "SELECT TOP 1 * FROM Applications WHERE ApplicantPersonID = @personID ORDER BY ApplicantPersonID DESC";
             SqlCommand cmd = new SqlCommand( query, connection );
             cmd.Parameters.AddWithValue( "@personID", personID );
 

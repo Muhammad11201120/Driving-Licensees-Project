@@ -18,19 +18,19 @@ namespace DVLD
 
             InitializeComponent();
             this._personID = personID;
-            ctrShowPersonDetails1.PersonID = this._personID;
+            ctrAddEditPersonWithFilters1.PersonID = this._personID;
             if ( this._personID == -1 )
             {
-                ctrShowPersonDetails1._Mode = ctrShowPersonDetails._enMode.AddMode;
+                ctrAddEditPersonWithFilters1._Mode = ctrAddEditPersonWithFilters._enMode.AddMode;
             }
             else
             {
-                ctrShowPersonDetails1._Mode = ctrShowPersonDetails._enMode.UpdateMode;
+                ctrAddEditPersonWithFilters1._Mode = ctrAddEditPersonWithFilters._enMode.UpdateMode;
             }
         }
         private void frmAddEditPerson_Load( object sender, EventArgs e )
         {
-            ctrShowPersonDetails1._LoadForm();
+            ctrAddEditPersonWithFilters1._LoadForm();
         }
         private void button1_Click( object sender, System.EventArgs e )
         {
@@ -39,7 +39,7 @@ namespace DVLD
 
         private void btnSave_Click( object sender, EventArgs e )
         {
-            ctrShowPersonDetails1.Save();
+            ctrAddEditPersonWithFilters1.Save();
         }
     }
 }

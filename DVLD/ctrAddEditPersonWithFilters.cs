@@ -45,14 +45,26 @@ namespace DVLD
             _image.male = "D:\\Programing\\c#\\DVLD_PROJECT\\Assets\\Male512.png";
             _image.female = "D:\\Programing\\c#\\DVLD_PROJECT\\Assets\\Female512.png";
         }
-
+        private bool _CheckIfTextBoxIsEmpty( TextBox txtbx )
+        {
+            if ( txtbx.Text == string.Empty )
+            {
+                errorProvider1.SetError( txtbx, "This Field Is Required.." );
+                return false;
+            }
+            else
+            {
+                errorProvider1.SetError( txtbx, string.Empty );
+                return true;
+            }
+        }
         private bool findPerson()
         {
-            //if ( this.PersonID != -1 )
-            //{
-            //    cbxFilters.SelectedIndex = ( int ) enFilter.PersonID;
-            //    txtFilter.Text = PersonID.ToString();
-            //}
+            if ( this.PersonID != -1 )
+            {
+                cbxFilters.SelectedIndex = ( int ) enFilter.PersonID;
+                txtFilter.Text = PersonID.ToString();
+            }
             if ( cbxFilters.SelectedIndex == ( int ) enFilter.Email )
             {
                 this._Person = clsPeople.FindPersonByEmail( txtFilter.Text );
@@ -138,19 +150,22 @@ namespace DVLD
 
             if ( !findPerson() )
             {
-                //lblMode.Text = "ADD NEW PERSON";
-                //txtId.Enabled = false;
-                //this._Person = new clsPeople();
+                lblMode.Text = "ADD NEW PERSON";
+                txtId.Enabled = false;
+                txtId.Enabled = false;
+                this._Person = new clsPeople();
                 return;
             }
 
             this._Person = clsPeople.FindPersonByID( this.PersonID );
             if ( this._Person == null )
             {
-
                 return;
             }
 
+            cbxFilters.Enabled = false;
+            txtFilter.Text = this._Person.ID.ToString();
+            txtFilter.Enabled = false;
             lblMode.Text = "UPDATE " + this._Person.firstName + "  " + this._Person.lastName;
             txtId.Enabled = false;
             txtId.Text = this._Person.ID.ToString();
@@ -199,10 +214,13 @@ namespace DVLD
         }
         public void Save()
         {
-            string sourctImagePath = "";
-            string destnationImagePath = "";
+            string sourceImagePath = "";
+            string destinationImagePath = "";
             string PreviousImagePath = "";
-
+            if ( !_CheckIfTextBoxIsEmpty( txtNationalID ) || !_CheckIfTextBoxIsEmpty( txtFirstName ) || !_CheckIfTextBoxIsEmpty( txtLastName ) || !_CheckIfTextBoxIsEmpty( txtPhone ) || !_CheckIfTextBoxIsEmpty( txtAddress ) )
+            {
+                return;
+            }
             int countryID = clsCountries.FindContry( cmxCountry.Text ).CountryID;
             this._Person.nationalID = txtNationalID.Text;
             this._Person.firstName = txtFirstName.Text;
@@ -223,17 +241,17 @@ namespace DVLD
             if ( pbxPerson.ImageLocation != _image.male && pbxPerson.ImageLocation != _image.female && pbxPerson.ImageLocation != string.Empty )
             {
 
-                sourctImagePath = pbxPerson.ImageLocation;
-                destnationImagePath = "D:\\DVLD-People-Images\\" + Guid.NewGuid() + ".png";
+                sourceImagePath = pbxPerson.ImageLocation;
+                destinationImagePath = "D:\\DVLD-People-Images\\" + Guid.NewGuid() + ".png";
                 PreviousImagePath = this._Person.imagePath;
 
-                if ( PreviousImagePath != string.Empty && System.IO.File.Exists( PreviousImagePath ) && PreviousImagePath != destnationImagePath )
+                if ( PreviousImagePath != string.Empty && System.IO.File.Exists( PreviousImagePath ) && PreviousImagePath != destinationImagePath )
                 {
 
                     System.IO.File.Delete( this._Person.imagePath );
                 }
-                System.IO.File.Copy( sourctImagePath, destnationImagePath );
-                this._Person.imagePath = destnationImagePath;
+                System.IO.File.Copy( sourceImagePath, destinationImagePath );
+                this._Person.imagePath = destinationImagePath;
             }
             else
             {

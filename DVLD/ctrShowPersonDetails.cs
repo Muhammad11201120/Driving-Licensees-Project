@@ -26,7 +26,7 @@ namespace DVLD
         }
         public int PersonID { get; set; }
         private clsPeople _Person;
-        public _enMode _Mode = _enMode.AddMode;
+        public _enMode _Mode = _enMode.UpdateMode;
         stDefaultImage _image;
         public ctrShowPersonDetails()
         {
@@ -79,13 +79,6 @@ namespace DVLD
             _FillCountries();
             cmxCountry.SelectedIndex = 0;
 
-            if ( this._Mode == _enMode.AddMode )
-            {
-                lblMode.Text = "ADD NEW PERSON";
-                txtId.Enabled = false;
-                this._Person = new clsPeople();
-                return;
-            }
 
             this._Person = clsPeople.FindPersonByID( this.PersonID );
             if ( this._Person == null )
@@ -95,16 +88,16 @@ namespace DVLD
             }
 
             lblMode.Text = "UPDATE " + this._Person.firstName + "  " + this._Person.lastName;
-            txtId.Enabled = false;
-            txtId.Text = this._Person.ID.ToString();
-            txtNationalID.Text = this._Person.nationalID.ToString();
-            txtNationalID.Enabled = false;
-            txtFirstName.Text = this._Person.firstName;
-            txtSecondName.Text = this._Person.secondName;
-            txtLastName.Text = this._Person.lastName;
+            lblPersonID.Enabled = false;
+            lblPersonID.Text = this._Person.ID.ToString();
+            lblNationalIdValue.Text = this._Person.nationalID.ToString();
+            lblNationalIdValue.Enabled = false;
+            lblFirstName.Text = this._Person.firstName;
+            lblSecondNameValue.Text = this._Person.secondName;
+            lblLastNameValue.Text = this._Person.lastName;
             dtmDateOfBirth.Value = this._Person.dateOfBirth;
-            txtAddress.Text = this._Person.address;
-            txtPhone.Text = this._Person.phone;
+            lblAddressValue.Text = this._Person.address;
+            lblPhoneValue.Text = this._Person.phone;
             if ( this._Person.gendor == ( byte ) _enGendor.Female )
             {
                 rbtnFemale.Checked = true;
@@ -117,11 +110,11 @@ namespace DVLD
             }
             if ( this._Person.thirdName != "" )
             {
-                txtThirdName.Text = this._Person.thirdName;
+                lblThirdNameValue.Text = this._Person.thirdName;
             }
             if ( this._Person.email != "" )
             {
-                txtEmail.Text = this._Person.email;
+                lblEmailValue.Text = this._Person.email;
             }
 
             if ( this._Person.imagePath != "" )
@@ -146,12 +139,12 @@ namespace DVLD
             string destnationImagePath = "";
             string PreviousImagePath = "";
             int countryID = clsCountries.FindContry( cmxCountry.Text ).CountryID;
-            this._Person.nationalID = txtNationalID.Text;
-            this._Person.firstName = txtFirstName.Text;
-            this._Person.secondName = txtSecondName.Text;
-            this._Person.lastName = txtLastName.Text;
-            this._Person.phone = txtPhone.Text;
-            this._Person.address = txtAddress.Text;
+            this._Person.nationalID = lblNationalIdValue.Text;
+            this._Person.firstName = lblFirstName.Text;
+            this._Person.secondName = lblSecondNameValue.Text;
+            this._Person.lastName = lblLastNameValue.Text;
+            this._Person.phone = lblPhoneValue.Text;
+            this._Person.address = lblAddressValue.Text;
             this._Person.dateOfBirth = dtmDateOfBirth.Value;
             this._Person.nationalityCountryID = countryID;
             if ( rbtnFemale.Checked == true )
@@ -181,17 +174,17 @@ namespace DVLD
             {
                 this._Person.imagePath = "";
             }
-            if ( txtThirdName.Text != string.Empty )
+            if ( lblThirdNameValue.Text != string.Empty )
             {
-                this._Person.thirdName = txtThirdName.Text;
+                this._Person.thirdName = lblThirdNameValue.Text;
             }
             else
             {
                 this._Person.thirdName = "";
             }
-            if ( txtEmail.Text != string.Empty )
+            if ( lblEmailValue.Text != string.Empty )
             {
-                this._Person.email = txtEmail.Text;
+                this._Person.email = lblEmailValue.Text;
             }
             else
             {
@@ -209,20 +202,20 @@ namespace DVLD
             }
             _Mode = _enMode.UpdateMode;
             lblMode.Text = "UPDATE " + this._Person.firstName + "  " + this._Person.lastName;
-            txtId.Text = this._Person.ID.ToString();
-            txtId.ReadOnly = true;
+            lblPersonID.Text = this._Person.ID.ToString();
+            lblPersonID.Enabled = false;
         }
         private void txtNationalID_Leave( object sender, EventArgs e )
         {
             if ( this._Mode == _enMode.AddMode )
             {
-                if ( checkIfNationalNumberExisits( txtNationalID.Text ) )
+                if ( checkIfNationalNumberExisits( lblPersonID.Text ) )
                 {
-                    errorProvider1.SetError( txtNationalID, "This National Number Is Alreaady Rigestered.." );
+                    errorProvider1.SetError( lblNationalIdValue, "This National Number Is Alreaady Rigestered.." );
                 }
                 else
                 {
-                    errorProvider1.SetError( txtNationalID, string.Empty );
+                    errorProvider1.SetError( lblNationalIdValue, string.Empty );
                 }
             }
 
@@ -262,16 +255,16 @@ namespace DVLD
         {
             if ( this._Mode == _enMode.AddMode )
             {
-                if ( txtEmail.Text != string.Empty )
+                if ( lblEmailValue.Text != string.Empty )
                 {
-                    if ( !IsValidEmail( txtEmail.Text ) )
+                    if ( !IsValidEmail( lblEmailValue.Text ) )
                     {
-                        errorProvider1.SetError( txtEmail, "This is Invalid Email Address.." );
+                        errorProvider1.SetError( lblEmailValue, "This is Invalid Email Address.." );
 
                     }
                     else
                     {
-                        errorProvider1.SetError( txtEmail, string.Empty );
+                        errorProvider1.SetError( lblEmailValue, string.Empty );
 
                     }
 

@@ -221,5 +221,37 @@ namespace DVLD_DataAccessLayer
             }
             return isFound;
         }
+        public static DataTable FindLocalDrivingApplication_ViewByNationalID( int nationalID )
+        {
+            DataTable dt = new DataTable();
+            SqlConnection connect = new SqlConnection( DataAccesseSettings.DVLD_String );
+            string query = "SELECT * FROM LocalDrivingLicenseApplications_View WHERE NationalNo = @nationalID";
+            SqlCommand cmd = new SqlCommand( query, connect );
+            cmd.Parameters.AddWithValue( "@nationalID", nationalID );
+            try
+            {
+                connect.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+                if ( reader.HasRows )
+                {
+                    dt.Load( reader );
+                }
+                else
+                {
+                    dt = null;
+                }
+                reader.Close();
+            }
+            catch ( Exception ex )
+            {
+                dt = null;
+                throw ex;
+            }
+            finally
+            {
+                connect.Close();
+            }
+            return dt;
+        }
     }
 }

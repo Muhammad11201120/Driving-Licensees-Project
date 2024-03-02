@@ -190,5 +190,63 @@ namespace DVLD_DataAccessLayer
                 conn.Close();
             }
         }
+        public static bool DoesAttendTestType( int localDrivingLicenseID, int testTypeID )
+        {
+            bool isFound = false;
+            SqlConnection conn = new SqlConnection( DataAccesseSettings.DVLD_String );
+            string query = @"SELECT FOUND = 1 from Tests  INNER JOIN
+                            TestAppointments ON Tests.TestAppointmentID = TestAppointments.TestAppointmentID INNER JOIN
+                            LocalDrivingLicenseApplications ON 
+                            TestAppointments.LocalDrivingLicenseApplicationID = LocalDrivingLicenseApplications.LocalDrivingLicenseApplicationID 
+                            where TestAppointments.LocalDrivingLicenseApplicationID = @localDrivingLicenseID and TestAppointments.TestTypeID = @testTypeID";
+            SqlCommand cmd = new SqlCommand( query, conn );
+            cmd.Parameters.AddWithValue( "@localDrivingLicenseID", localDrivingLicenseID );
+            cmd.Parameters.AddWithValue( "@testTypeID", testTypeID );
+            try
+            {
+                conn.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+                isFound = reader.HasRows;
+                reader.Close();
+            }
+            catch ( Exception ex )
+            {
+                throw ex;
+            }
+            finally
+            {
+                conn.Close();
+            }
+            return isFound;
+        }
+        public static bool DoesPassTestType( int localDrivingLicenseID, int testTypeID )
+        {
+            bool isFound = false;
+            SqlConnection conn = new SqlConnection( DataAccesseSettings.DVLD_String );
+            string query = @"SELECT FOUND = 1 from Tests  INNER JOIN
+                            TestAppointments ON Tests.TestAppointmentID = TestAppointments.TestAppointmentID INNER JOIN
+                            LocalDrivingLicenseApplications ON 
+                            TestAppointments.LocalDrivingLicenseApplicationID = LocalDrivingLicenseApplications.LocalDrivingLicenseApplicationID 
+                            where TestAppointments.LocalDrivingLicenseApplicationID = @localDrivingLicenseID and TestAppointments.TestTypeID = @testTypeID and Tests.TestResult = 1";
+            SqlCommand cmd = new SqlCommand( query, conn );
+            cmd.Parameters.AddWithValue( "@localDrivingLicenseID", localDrivingLicenseID );
+            cmd.Parameters.AddWithValue( "@testTypeID", testTypeID );
+            try
+            {
+                conn.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+                isFound = reader.HasRows;
+                reader.Close();
+            }
+            catch ( Exception ex )
+            {
+                throw ex;
+            }
+            finally
+            {
+                conn.Close();
+            }
+            return isFound;
+        }
     }
 }

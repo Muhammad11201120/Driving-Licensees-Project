@@ -106,5 +106,13 @@ namespace DVLD_BusinessLayer
             }
             return false;
         }
+        public static bool DoesAttendTestType( int testAppointmentID, int testTypeID )
+        {
+            return clsTestsDatatAccess.DoesAttendTestType( testAppointmentID, testTypeID );
+        }
+        public static bool DoesPassTestType( int testAppointmentID, int testTypeID )
+        {
+            return clsTestsDatatAccess.DoesPassTestType( testAppointmentID, testTypeID );
+        }
     }
 }

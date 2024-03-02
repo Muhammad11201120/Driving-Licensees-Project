@@ -73,5 +73,59 @@ namespace DVLD
             lbNationalNumber.Text = clsGeneralSettings.nationalNumber;
             pictureBox1.ImageLocation = clsGeneralSettings.userImg;
         }
+
+        private void dRIVERSToolStripMenuItem_Click( object sender, EventArgs e )
+        {
+            frmDrivers frm = new frmDrivers();
+            frm.ShowDialog();
+        }
+
+        private void internationalLicenseToolStripMenuItem_Click( object sender, EventArgs e )
+        {
+            frmNewInternationalLicenseApplication frm = new frmNewInternationalLicenseApplication();
+            frm.ShowDialog();
+        }
+
+        private void internationalDrivingLicenseApplicationsToolStripMenuItem_Click( object sender, EventArgs e )
+        {
+            frmManageInternationalLicenses frm = new frmManageInternationalLicenses();
+            frm.ShowDialog();
+        }
+
+        private void rENEWDRIVINGLICENSEToolStripMenuItem_Click( object sender, EventArgs e )
+        {
+            frmRenewLicenseApplicationcs frm = new frmRenewLicenseApplicationcs();
+            frm.ShowDialog();
+        }
+
+        private void toolStripMenuItem4_Click( object sender, EventArgs e )
+        {
+            frmReplacementForDamagedOrLostLicense frm = new frmReplacementForDamagedOrLostLicense();
+            frm.ShowDialog();
+        }
+
+        private void rETAKETESTToolStripMenuItem_Click( object sender, EventArgs e )
+        {
+            frmLocalDrivingLicenseApplications frm = new frmLocalDrivingLicenseApplications();
+            frm.ShowDialog();
+        }
+
+        private void detainLicenseToolStripMenuItem_Click( object sender, EventArgs e )
+        {
+            frmDetainLicense frm = new frmDetainLicense( -1 );
+            frm.ShowDialog();
+        }
+
+        private void manageDetainLToolStripMenuItem_Click( object sender, EventArgs e )
+        {
+            frmManageDetainedLicenses frm = new frmManageDetainedLicenses();
+            frm.ShowDialog();
+        }
+
+        private void relaeaseDetainLicenseToolStripMenuItem_Click( object sender, EventArgs e )
+        {
+            frmReleaseDetainedLicense frm = new frmReleaseDetainedLicense( -1 );
+            frm.ShowDialog();
+        }
     }
 }

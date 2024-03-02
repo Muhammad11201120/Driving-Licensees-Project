@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static DVLD.ctrTests;
 using static System.Net.Mime.MediaTypeNames;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace DVLD
 {
@@ -22,6 +23,8 @@ namespace DVLD
         }
         private clsTests _Test = null;
         private clsTestAppointments _TestAppointment = null;
+        private clsTestTypes _TestTypes = null;
+        private clsApplications _Application = null;
         enMode Mode = enMode.UPDATE;
         public frmIssueTest( int testAppontmentID, clsPeople person, clsLocalDrivingLicenseApplications localApplication, clsTestTypes testType, clsApplications application, string className )
         {
@@ -39,6 +42,8 @@ namespace DVLD
             ctrTests1._application = application;
             ctrTests1.ClassName = className;
             ctrTests1._TestTypeID = ( clsTestTypes.enTestTypes ) testType.testTypeID;
+            this._TestTypes = testType;
+            this._Application = application;
         }
 
         private void frmIssueTest_Load( object sender, EventArgs e )
@@ -67,9 +72,10 @@ namespace DVLD
             _Test.notes = richTextBox1.Text;
             _Test.createdByUserID = clsGeneralSettings.userID;
             this._TestAppointment.isLocked = true;
-            if ( _Test.Save() && this._TestAppointment.Save() )
+            if ( _Test.Save() && this._TestAppointment.Save() && _Application.Save() )
             {
                 MessageBox.Show( "Test Saved Successfully.." );
+                this.Close();
             }
             else
             {

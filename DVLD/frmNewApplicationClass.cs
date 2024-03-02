@@ -11,11 +11,19 @@ namespace DVLD
         int personID = -1;
         clsApplicationTypes applicationType = null;
         clsLocalDrivingLicenseApplications localDrivingLicenseApplications = null;
-        clsApplications application = null;
+        clsApplications _application = null;
+        clsApplications _Application = null;
+        clsLicenses _license = null;
+        clsDrivers _driver = null;
         public frmNewApplicationClass( int personID, int applicationTypeID )
         {
             InitializeComponent();
             this.personID = personID;
+            if ( this.personID != -1 )
+            {
+                _application = clsApplications.FindApplicationByPersonID( personID );
+
+            }
             this.appLicationTypeID = applicationTypeID;
             if ( applicationTypeID != -1 )
             {
@@ -37,7 +45,7 @@ namespace DVLD
         private void frmNewApplicationClass_Load( object sender, System.EventArgs e )
         {
             _fillLicenseClasses();
-            this.application = new clsApplications();
+            _Application = new clsApplications();
             comboBox1.SelectedIndex = 0;
             lblApplicationDate.Text = DateTime.Now.ToString();
             lblApplicationFees.Text = this.applicationType.ApplicationFees.ToString();
@@ -52,30 +60,36 @@ namespace DVLD
 
         private void btnSave_Click( object sender, EventArgs e )
         {
-            this.application.applicationPersonID = this.personID;
-            this.application.applicationTypeID = this.appLicationTypeID;
-            this.application.applicationDate = DateTime.Parse( lblApplicationDate.Text );
-            this.application.applicationStatus = 1;
-            this.application.paidFees = this.applicationType.ApplicationFees;
-            this.application.lastStatusDate = DateTime.Now;
-            this.application.createdByUserID = clsGeneralSettings.userID;
+            this._Application.applicationPersonID = this.personID;
+            this._Application.applicationTypeID = this.appLicationTypeID;
+            this._Application.applicationDate = DateTime.Parse( lblApplicationDate.Text );
+            this._Application.applicationStatus = 1;
+            this._Application.paidFees = this.applicationType.ApplicationFees;
+            this._Application.lastStatusDate = DateTime.Now;
+            this._Application.createdByUserID = clsGeneralSettings.userID;
+            _driver = clsDrivers.FindDriverByPersonID( _Application.applicationPersonID );
+            _license = clsLicenses.FindLicenseByDriverID( _driver.DriverID );
 
+            if ( clsLicenses.isLicenseExists( this._driver.DriverID, this._license.ApplicationID, ( comboBox1.SelectedIndex + 1 ) ) )
+            {
+                MessageBox.Show( "This Driver Already has a License of this Class" );
+                return;
+            }
 
-
-            if ( this.application.Save() )
+            if ( this._Application.Save() )
             {
                 MessageBox.Show( "Application Saved Successfully" );
                 localDrivingLicenseApplications = new clsLocalDrivingLicenseApplications();
-                localDrivingLicenseApplications.applicationID = this.application.applicationID;
+                localDrivingLicenseApplications.applicationID = this._Application.applicationID;
                 localDrivingLicenseApplications.licenseClassID = clsLicensesClasses.FindClassByID( ( comboBox1.SelectedIndex + 1 ) ).LicenseClassID;
                 if ( localDrivingLicenseApplications.Save() )
                 {
                     MessageBox.Show( "Application Saved Successfully" );
-                    lblDriverLicenseApplicationID.Text = this.application.applicationID.ToString();
+                    lblDriverLicenseApplicationID.Text = this._Application.applicationID.ToString();
                 }
                 else
                 {
-                    MessageBox.Show( "licencse class went wrong" );
+                    MessageBox.Show( "license class went wrong" );
                 }
 
             }

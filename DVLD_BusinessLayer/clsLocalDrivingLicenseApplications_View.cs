@@ -111,5 +111,9 @@ namespace DVLD_BusinessLayer
             }
             return false;
         }
+        public static DataTable FindLocalDrivingApplication_ViewByNationalID( int nationalID )
+        {
+            return clsLocalDrivingLicenseApplications_ViewDataAccess.FindLocalDrivingApplication_ViewByNationalID( nationalID );
+        }
     }
 }

@@ -86,19 +86,19 @@
             // lblEditPerson
             // 
             this.lblEditPerson.AutoSize = true;
-            this.lblEditPerson.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblEditPerson.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblEditPerson.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblEditPerson.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblEditPerson.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEditPerson.ForeColor = System.Drawing.Color.White;
             this.lblEditPerson.Image = global::DVLD.Properties.Resources.edit_32;
             this.lblEditPerson.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblEditPerson.Location = new System.Drawing.Point(621, 49);
+            this.lblEditPerson.Location = new System.Drawing.Point(653, 60);
             this.lblEditPerson.Name = "lblEditPerson";
-            this.lblEditPerson.Padding = new System.Windows.Forms.Padding(5);
-            this.lblEditPerson.Size = new System.Drawing.Size(122, 31);
+            this.lblEditPerson.Padding = new System.Windows.Forms.Padding(5, 12, 5, 10);
+            this.lblEditPerson.Size = new System.Drawing.Size(90, 43);
             this.lblEditPerson.TabIndex = 3;
-            this.lblEditPerson.Text = "EDIT ACCOUNT";
+            this.lblEditPerson.Text = "          EDIT";
             this.lblEditPerson.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.lblEditPerson.Click += new System.EventHandler(this.lblEditPerson_Click);
             // 
@@ -156,7 +156,7 @@
             this.lblAddressValue.AutoSize = true;
             this.lblAddressValue.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAddressValue.ForeColor = System.Drawing.Color.SteelBlue;
-            this.lblAddressValue.Location = new System.Drawing.Point(483, 390);
+            this.lblAddressValue.Location = new System.Drawing.Point(498, 390);
             this.lblAddressValue.Name = "lblAddressValue";
             this.lblAddressValue.Size = new System.Drawing.Size(14, 14);
             this.lblAddressValue.TabIndex = 33;
@@ -167,7 +167,7 @@
             this.lblCountryValue.AutoSize = true;
             this.lblCountryValue.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCountryValue.ForeColor = System.Drawing.Color.SteelBlue;
-            this.lblCountryValue.Location = new System.Drawing.Point(483, 349);
+            this.lblCountryValue.Location = new System.Drawing.Point(498, 349);
             this.lblCountryValue.Name = "lblCountryValue";
             this.lblCountryValue.Size = new System.Drawing.Size(14, 14);
             this.lblCountryValue.TabIndex = 32;
@@ -178,7 +178,7 @@
             this.lblEmailValue.AutoSize = true;
             this.lblEmailValue.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmailValue.ForeColor = System.Drawing.Color.SteelBlue;
-            this.lblEmailValue.Location = new System.Drawing.Point(125, 390);
+            this.lblEmailValue.Location = new System.Drawing.Point(153, 388);
             this.lblEmailValue.Name = "lblEmailValue";
             this.lblEmailValue.Size = new System.Drawing.Size(14, 14);
             this.lblEmailValue.TabIndex = 31;
@@ -189,7 +189,7 @@
             this.lblPhoneValue.AutoSize = true;
             this.lblPhoneValue.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPhoneValue.ForeColor = System.Drawing.Color.SteelBlue;
-            this.lblPhoneValue.Location = new System.Drawing.Point(125, 351);
+            this.lblPhoneValue.Location = new System.Drawing.Point(153, 347);
             this.lblPhoneValue.Name = "lblPhoneValue";
             this.lblPhoneValue.Size = new System.Drawing.Size(14, 14);
             this.lblPhoneValue.TabIndex = 30;
@@ -200,7 +200,7 @@
             this.lblLastNameValue.AutoSize = true;
             this.lblLastNameValue.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLastNameValue.ForeColor = System.Drawing.Color.SteelBlue;
-            this.lblLastNameValue.Location = new System.Drawing.Point(125, 227);
+            this.lblLastNameValue.Location = new System.Drawing.Point(153, 227);
             this.lblLastNameValue.Name = "lblLastNameValue";
             this.lblLastNameValue.Size = new System.Drawing.Size(14, 14);
             this.lblLastNameValue.TabIndex = 29;
@@ -211,7 +211,7 @@
             this.lblThirdNameVaalue.AutoSize = true;
             this.lblThirdNameVaalue.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblThirdNameVaalue.ForeColor = System.Drawing.Color.SteelBlue;
-            this.lblThirdNameVaalue.Location = new System.Drawing.Point(125, 183);
+            this.lblThirdNameVaalue.Location = new System.Drawing.Point(153, 183);
             this.lblThirdNameVaalue.Name = "lblThirdNameVaalue";
             this.lblThirdNameVaalue.Size = new System.Drawing.Size(14, 14);
             this.lblThirdNameVaalue.TabIndex = 28;
@@ -222,7 +222,7 @@
             this.lblSecondNameValue.AutoSize = true;
             this.lblSecondNameValue.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSecondNameValue.ForeColor = System.Drawing.Color.SteelBlue;
-            this.lblSecondNameValue.Location = new System.Drawing.Point(125, 132);
+            this.lblSecondNameValue.Location = new System.Drawing.Point(153, 132);
             this.lblSecondNameValue.Name = "lblSecondNameValue";
             this.lblSecondNameValue.Size = new System.Drawing.Size(14, 14);
             this.lblSecondNameValue.TabIndex = 27;
@@ -233,7 +233,7 @@
             this.lblFirstNaameValue.AutoSize = true;
             this.lblFirstNaameValue.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFirstNaameValue.ForeColor = System.Drawing.Color.SteelBlue;
-            this.lblFirstNaameValue.Location = new System.Drawing.Point(128, 84);
+            this.lblFirstNaameValue.Location = new System.Drawing.Point(153, 84);
             this.lblFirstNaameValue.Name = "lblFirstNaameValue";
             this.lblFirstNaameValue.Size = new System.Drawing.Size(14, 14);
             this.lblFirstNaameValue.TabIndex = 26;
@@ -254,7 +254,7 @@
             this.lblNationalNO.AutoSize = true;
             this.lblNationalNO.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNationalNO.ForeColor = System.Drawing.Color.SteelBlue;
-            this.lblNationalNO.Location = new System.Drawing.Point(142, 39);
+            this.lblNationalNO.Location = new System.Drawing.Point(162, 39);
             this.lblNationalNO.Name = "lblNationalNO";
             this.lblNationalNO.Size = new System.Drawing.Size(31, 14);
             this.lblNationalNO.TabIndex = 22;
@@ -287,7 +287,7 @@
             this.lblDateOfBirth.AutoSize = true;
             this.lblDateOfBirth.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDateOfBirth.ForeColor = System.Drawing.Color.SteelBlue;
-            this.lblDateOfBirth.Location = new System.Drawing.Point(128, 312);
+            this.lblDateOfBirth.Location = new System.Drawing.Point(153, 312);
             this.lblDateOfBirth.Name = "lblDateOfBirth";
             this.lblDateOfBirth.Size = new System.Drawing.Size(65, 14);
             this.lblDateOfBirth.TabIndex = 18;
@@ -320,7 +320,7 @@
             this.lblGendorValue.AutoSize = true;
             this.lblGendorValue.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGendorValue.ForeColor = System.Drawing.Color.SteelBlue;
-            this.lblGendorValue.Location = new System.Drawing.Point(128, 273);
+            this.lblGendorValue.Location = new System.Drawing.Point(153, 273);
             this.lblGendorValue.Name = "lblGendorValue";
             this.lblGendorValue.Size = new System.Drawing.Size(39, 14);
             this.lblGendorValue.TabIndex = 14;

@@ -16,6 +16,7 @@ namespace DVLD
     {
         public string NationalID { get; set; }
         public string ClassName { get; set; }
+        private int _LocalAppID = -1;
         private clsPeople _Person = null;
         private clsLocalDrivingLicenseApplications _LocalDrivingLicenseApplication = null;
         private clsApplications _Application = null;
@@ -24,14 +25,16 @@ namespace DVLD
         private clsTests _Test = null;
         DataTable dt;
         private DataView _Dv;
-        public frmVisionTestAppointment( string nationalID, string className, int testType )
+        public frmVisionTestAppointment( int localAppID, string nationalID, string className, int testType )
         {
+
             this.NationalID = nationalID;
             this.ClassName = className;
+            this._LocalAppID = localAppID;
             ctrApplicationInfo.NationalNo = this.NationalID;
             _Person = clsPeople.FindPersonByNationalID( this.NationalID );
             _Application = clsApplications.FindApplicationByPersonID( _Person.ID );
-            _LocalDrivingLicenseApplication = clsLocalDrivingLicenseApplications.FindLocalDrivingLicenseApplicationByApplicationID( _Application.applicationID );
+            _LocalDrivingLicenseApplication = clsLocalDrivingLicenseApplications.FindLocalDrivingLicenseApplicationByID( _LocalAppID );
             dt = clsTestAppointments.GetAllTestAppointmentsByLocalDrivingLicenseApplicatioID( _LocalDrivingLicenseApplication.localDrivingLicenseApplicationID );
             _Appointment = clsTestAppointments.FindTestAppointmentByLocalDrivingLicenseApplicationID( _LocalDrivingLicenseApplication.localDrivingLicenseApplicationID );
             _TestType = clsTestTypes.FindTestTypeByTestTypeID( testType );
@@ -44,6 +47,7 @@ namespace DVLD
 
         private void frmVisionTestAppointment_Load( object sender, EventArgs e )
         {
+            ctrApplicationInfo1._LocaAppID = _LocalAppID;
             ctrApplicationInfo1._LoadForm();
             if ( _TestType.testTypeID == 3 )
             {
@@ -83,11 +87,12 @@ namespace DVLD
                         MessageBox.Show( "You Already Have An Open Appointment..in : " + row[ "AppointmentDate" ] );
                         return;
                     }
+
                 }
             }
             if ( _Test != null )
             {
-                if ( _Appointment != null && _Test.testResult )
+                if ( _Appointment.testTypeID == 3 && _Test.testResult )
                 {
                     AppointmentID = _Appointment.testAppointmentID;
                     MessageBox.Show( "You Already Passed This Test.." );

@@ -879,7 +879,7 @@ namespace DVLD_DataAccessLayer
             }
             catch ( Exception ex )
             {
-                isFound = false;
+                //nothing
             }
             finally
             {

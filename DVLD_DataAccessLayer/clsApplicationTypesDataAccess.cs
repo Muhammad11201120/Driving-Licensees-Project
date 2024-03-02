@@ -29,7 +29,7 @@ namespace DVLD_DataAccessLayer
             catch ( Exception ex )
             {
 
-                //do nothing
+                throw ex;
             }
             finally
             {

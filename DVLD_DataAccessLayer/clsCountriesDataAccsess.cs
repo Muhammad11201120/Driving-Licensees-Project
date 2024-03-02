@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Data;
 using System.Data.SqlClient;
+using System.Diagnostics;
 
 namespace DVLD_DataAccessLayer
 {
@@ -30,7 +31,7 @@ namespace DVLD_DataAccessLayer
             catch ( Exception ex )
             {
 
-                //do nothing
+                throw ex;
             }
             finally
             {
@@ -65,7 +66,7 @@ namespace DVLD_DataAccessLayer
             catch ( System.Exception ex )
             {
 
-                isFound = false;
+                throw ex;
             }
             finally
             {
@@ -99,8 +100,7 @@ namespace DVLD_DataAccessLayer
             }
             catch ( System.Exception ex )
             {
-
-                isFound = false;
+                throw ex;
             }
             finally
             {
