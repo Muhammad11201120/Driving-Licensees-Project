@@ -145,9 +145,9 @@
             // 
             // mstrpAccountInfos
             // 
-            this.mstrpAccountInfos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.mstrpAccountInfos.BackColor = System.Drawing.Color.White;
             this.mstrpAccountInfos.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mstrpAccountInfos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.mstrpAccountInfos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.mstrpAccountInfos.Image = global::DVLD.Properties.Resources.Notes_32;
             this.mstrpAccountInfos.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.mstrpAccountInfos.Name = "mstrpAccountInfos";
@@ -157,13 +157,16 @@
             // 
             // toolStripSeparator2
             // 
+            this.toolStripSeparator2.BackColor = System.Drawing.Color.White;
+            this.toolStripSeparator2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.toolStripSeparator2.Name = "toolStripSeparator2";
             this.toolStripSeparator2.Size = new System.Drawing.Size(236, 6);
             // 
             // mstrpChangePassword
             // 
+            this.mstrpChangePassword.BackColor = System.Drawing.Color.White;
             this.mstrpChangePassword.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mstrpChangePassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.mstrpChangePassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.mstrpChangePassword.Image = global::DVLD.Properties.Resources.Password_32;
             this.mstrpChangePassword.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.mstrpChangePassword.Name = "mstrpChangePassword";
@@ -173,13 +176,16 @@
             // 
             // toolStripSeparator1
             // 
+            this.toolStripSeparator1.BackColor = System.Drawing.Color.White;
+            this.toolStripSeparator1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(236, 6);
             // 
             // lOGOUTToolStripMenuItem
             // 
+            this.lOGOUTToolStripMenuItem.BackColor = System.Drawing.Color.White;
             this.lOGOUTToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lOGOUTToolStripMenuItem.ForeColor = System.Drawing.Color.IndianRed;
+            this.lOGOUTToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.lOGOUTToolStripMenuItem.Image = global::DVLD.Properties.Resources.sign_out_32__2;
             this.lOGOUTToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.lOGOUTToolStripMenuItem.Name = "lOGOUTToolStripMenuItem";
@@ -225,7 +231,7 @@
             this.toolStripSeparator6,
             this.rETAKETESTToolStripMenuItem});
             this.dRIVINGLICENSESSERVICESToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dRIVINGLICENSESSERVICESToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.dRIVINGLICENSESSERVICESToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.dRIVINGLICENSESSERVICESToolStripMenuItem.Image = global::DVLD.Properties.Resources.Cars_48;
             this.dRIVINGLICENSESSERVICESToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.dRIVINGLICENSESSERVICESToolStripMenuItem.Name = "dRIVINGLICENSESSERVICESToolStripMenuItem";
@@ -339,6 +345,7 @@
             // 
             // toolStripSeparator5
             // 
+            this.toolStripSeparator5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.toolStripSeparator5.Name = "toolStripSeparator5";
             this.toolStripSeparator5.Size = new System.Drawing.Size(340, 6);
             // 
@@ -349,7 +356,7 @@
             this.localDrivingLicenseApplicationsToolStripMenuItem1,
             this.internationalDrivingLicenseApplicationsToolStripMenuItem});
             this.mANAGEAPPLICATIONSToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mANAGEAPPLICATIONSToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.mANAGEAPPLICATIONSToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.mANAGEAPPLICATIONSToolStripMenuItem.Image = global::DVLD.Properties.Resources.Applications_64;
             this.mANAGEAPPLICATIONSToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.mANAGEAPPLICATIONSToolStripMenuItem.Name = "mANAGEAPPLICATIONSToolStripMenuItem";
@@ -378,6 +385,7 @@
             // 
             // toolStripSeparator4
             // 
+            this.toolStripSeparator4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.toolStripSeparator4.Name = "toolStripSeparator4";
             this.toolStripSeparator4.Size = new System.Drawing.Size(340, 6);
             // 
@@ -391,7 +399,7 @@
             this.toolStripSeparator11,
             this.relaeaseDetainLicenseToolStripMenuItem});
             this.dETAINLICENSESToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dETAINLICENSESToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.dETAINLICENSESToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.dETAINLICENSESToolStripMenuItem.Image = global::DVLD.Properties.Resources.Detain_64;
             this.dETAINLICENSESToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.dETAINLICENSESToolStripMenuItem.Name = "dETAINLICENSESToolStripMenuItem";
@@ -437,6 +445,7 @@
             // 
             // toolStripSeparator3
             // 
+            this.toolStripSeparator3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.toolStripSeparator3.Name = "toolStripSeparator3";
             this.toolStripSeparator3.Size = new System.Drawing.Size(340, 6);
             // 
@@ -444,7 +453,7 @@
             // 
             this.mANAGEAPPLICATIONTYPESToolStripMenuItem.BackColor = System.Drawing.Color.SteelBlue;
             this.mANAGEAPPLICATIONTYPESToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mANAGEAPPLICATIONTYPESToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.mANAGEAPPLICATIONTYPESToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.mANAGEAPPLICATIONTYPESToolStripMenuItem.Image = global::DVLD.Properties.Resources.Application_Types_64;
             this.mANAGEAPPLICATIONTYPESToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.mANAGEAPPLICATIONTYPESToolStripMenuItem.Name = "mANAGEAPPLICATIONTYPESToolStripMenuItem";
@@ -454,6 +463,7 @@
             // 
             // toolStripSeparator10
             // 
+            this.toolStripSeparator10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.toolStripSeparator10.Name = "toolStripSeparator10";
             this.toolStripSeparator10.Size = new System.Drawing.Size(340, 6);
             // 
@@ -461,7 +471,7 @@
             // 
             this.mANAGETESTTYPESToolStripMenuItem.BackColor = System.Drawing.Color.SteelBlue;
             this.mANAGETESTTYPESToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mANAGETESTTYPESToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.mANAGETESTTYPESToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.mANAGETESTTYPESToolStripMenuItem.Image = global::DVLD.Properties.Resources.Test_Type_64;
             this.mANAGETESTTYPESToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.mANAGETESTTYPESToolStripMenuItem.Name = "mANAGETESTTYPESToolStripMenuItem";

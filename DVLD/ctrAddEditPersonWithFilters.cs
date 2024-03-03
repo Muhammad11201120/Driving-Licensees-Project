@@ -244,14 +244,12 @@ namespace DVLD
                 sourceImagePath = pbxPerson.ImageLocation;
                 destinationImagePath = "D:\\DVLD-People-Images\\" + Guid.NewGuid() + ".png";
                 PreviousImagePath = this._Person.imagePath;
-
-                if ( PreviousImagePath != string.Empty && System.IO.File.Exists( PreviousImagePath ) && PreviousImagePath != destinationImagePath )
-                {
-
-                    System.IO.File.Delete( this._Person.imagePath );
-                }
                 System.IO.File.Copy( sourceImagePath, destinationImagePath );
                 this._Person.imagePath = destinationImagePath;
+                if ( PreviousImagePath != string.Empty && System.IO.File.Exists( PreviousImagePath ) && PreviousImagePath != destinationImagePath )
+                {
+                    System.IO.File.Delete( this._Person.imagePath );
+                }
             }
             else
             {
@@ -310,7 +308,7 @@ namespace DVLD
         private void txtFilter_TextChanged( object sender, EventArgs e )
         {
 
-            _LoadForm();
+            //
 
         }
         private void lblImage_Click( object sender, EventArgs e )

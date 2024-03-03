@@ -30,6 +30,7 @@ namespace DVLD
         {
             if ( !withFilter )
             {
+                txtLicenseID.Text = licenseID.ToString();
                 groupBox1.Enabled = false;
             }
         }
@@ -102,7 +103,7 @@ namespace DVLD
             {
                 lblIssueReason.Text = "UN KNOWN";
             }
-            lblIsDetained.Text = clsDetsinedLicense.FindDetainLicenseByLicenseID( license.LicenseID ) != null ? "YES" : "NO";
+            lblIsDetained.Text = clsDetsinedLicense.FindDetainLicenseByLicenseID( license.LicenseID ).isRelaesed  ? "NO" : "YES";
             lblNotes.Text = license.Notes == string.Empty ? "NO ADDITIONS" : license.Notes;
             pboxImage.ImageLocation = person.imagePath;
             return true;

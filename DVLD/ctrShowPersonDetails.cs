@@ -161,14 +161,12 @@ namespace DVLD
                 sourctImagePath = pbxPerson.ImageLocation;
                 destnationImagePath = "D:\\DVLD-People-Images\\" + Guid.NewGuid() + ".png";
                 PreviousImagePath = this._Person.imagePath;
-
-                if ( PreviousImagePath != string.Empty && System.IO.File.Exists( PreviousImagePath ) && PreviousImagePath != destnationImagePath )
-                {
-
-                    System.IO.File.Delete( this._Person.imagePath );
-                }
                 System.IO.File.Copy( sourctImagePath, destnationImagePath );
                 this._Person.imagePath = destnationImagePath;
+                if ( PreviousImagePath != string.Empty && System.IO.File.Exists( PreviousImagePath ) && PreviousImagePath != destnationImagePath )
+                {
+                    System.IO.File.Delete( this._Person.imagePath );
+                }
             }
             else
             {

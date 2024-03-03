@@ -71,14 +71,22 @@ namespace DVLD
         {
             if ( _LoadData() )
             {
+                if ( detainLicense != null && detainLicense.isRelaesed == false )
+                {
+                    MessageBox.Show( "This License Is Already Detained.." );
+                    return;
+                }
                 if ( mode == _enMode.ADDNEW )
                 {
                     detainLicense = new clsDetsinedLicense();
                 }
                 detainLicense.licenseID = ctrFindLicenseWithFilter1.license.LicenseID;
                 detainLicense.detainDate = DateTime.Now;
-                detainLicense.fineFees = Convert.ToDecimal( txtFineFees.Text );
+                detainLicense.fineFees = txtFineFees.Text != string.Empty ? decimal.Parse( txtFineFees.Text ) : 0;
                 detainLicense.isRelaesed = false;
+                detainLicense.releaseApplicationID = -1;
+                detainLicense.releasedByUserID = -1;
+                detainLicense.releaseDate = DateTime.MinValue;
                 detainLicense.createdByUserID = clsGeneralSettings.userID;
                 if ( detainLicense.Save() )
                 {
@@ -89,6 +97,16 @@ namespace DVLD
                     MessageBox.Show( "License Detained Failed.." );
                 }
             }
+        }
+
+        private void txtFineFees_KeyPress( object sender, KeyPressEventArgs e )
+        {
+
+            if ( !char.IsNumber( e.KeyChar ) )
+            {
+                e.Handled = e.KeyChar != ( Char ) Keys.Back;
+            }
+
         }
     }
 }

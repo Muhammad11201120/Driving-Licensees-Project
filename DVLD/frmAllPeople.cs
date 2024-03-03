@@ -96,7 +96,7 @@ namespace DVLD
                 }
                 else
                 {
-                    MessageBox.Show( "Contact Is Not Deleted.." );
+                    MessageBox.Show( "Contact Is Not Deleted Because It Is Related With other Applications..", "", MessageBoxButtons.OK, MessageBoxIcon.Error );
                 }
             }
         }

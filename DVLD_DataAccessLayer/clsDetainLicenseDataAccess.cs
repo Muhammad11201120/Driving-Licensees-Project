@@ -154,9 +154,30 @@ namespace DVLD_DataAccessLayer
             cmd.Parameters.AddWithValue( "@FineFees", fineFees );
             cmd.Parameters.AddWithValue( "@CreatedByUserID", createdByUserID );
             cmd.Parameters.AddWithValue( "@IsReleased", isRelaesed );
-            cmd.Parameters.AddWithValue( "@ReleaseDate", releaseDate );
-            cmd.Parameters.AddWithValue( "@ReleasedByUserID", releasedByUserID );
-            cmd.Parameters.AddWithValue( "@ReleaseApplicationID", releaseApplicationID );
+            if ( releaseDate != DateTime.MinValue )
+            {
+                cmd.Parameters.AddWithValue( "@ReleaseDate", releaseDate );
+            }
+            else
+            {
+                cmd.Parameters.AddWithValue( "@ReleaseDate", DBNull.Value );
+            }
+            if ( releasedByUserID != -1 )
+            {
+                cmd.Parameters.AddWithValue( "@ReleasedByUserID", releaseDate );
+            }
+            else
+            {
+                cmd.Parameters.AddWithValue( "@ReleasedByUserID", DBNull.Value );
+            }
+            if ( releaseApplicationID != -1 )
+            {
+                cmd.Parameters.AddWithValue( "@ReleaseApplicationID", releaseApplicationID );
+            }
+            else
+            {
+                cmd.Parameters.AddWithValue( "@ReleaseApplicationID", DBNull.Value );
+            }
             try
             {
                 connect.Open();
@@ -169,7 +190,7 @@ namespace DVLD_DataAccessLayer
             catch ( System.Exception ex )
             {
 
-                //do nothing
+                throw ex;
             }
             finally
             {
@@ -177,7 +198,7 @@ namespace DVLD_DataAccessLayer
             }
             return detainID;
         }
-        public static bool UpdateDetainLicense( int detainID, int licenseID, DateTime detainDate, decimal fineFees, int createdByUserID, bool isReleased, DateTime releasedDate, int releasedByUserID, int releaseApplicationID )
+        public static bool UpdateDetainLicense( int detainID, int licenseID, DateTime detainDate, decimal fineFees, int createdByUserID, bool isReleased, DateTime releaseDate, int releasedByUserID, int releaseApplicationID )
         {
             SqlConnection connect = new SqlConnection( DataAccesseSettings.DVLD_String );
             string query = "update DetainedLicenses set LicenseID = @LicenseID, DetainDate = @DetainDate, FineFees = @FineFees, CreatedByUserID = @CreatedByUserID, IsReleased = @IsReleased, ReleaseDate = @ReleaseDate, ReleasedByUserID = @ReleasedByUserID, ReleaseApplicationID = @ReleaseApplicationID where DetainID = @DetainID";
@@ -188,9 +209,30 @@ namespace DVLD_DataAccessLayer
             cmd.Parameters.AddWithValue( "@FineFees", fineFees );
             cmd.Parameters.AddWithValue( "@CreatedByUserID", createdByUserID );
             cmd.Parameters.AddWithValue( "@IsReleased", isReleased );
-            cmd.Parameters.AddWithValue( "@ReleaseDate", releasedDate );
-            cmd.Parameters.AddWithValue( "@ReleasedByUserID", releasedByUserID );
-            cmd.Parameters.AddWithValue( "@ReleaseApplicationID", releaseApplicationID );
+            if ( releaseDate != DateTime.MinValue )
+            {
+                cmd.Parameters.AddWithValue( "@ReleaseDate", releaseDate );
+            }
+            else
+            {
+                cmd.Parameters.AddWithValue( "@ReleaseDate", DBNull.Value );
+            }
+            if ( releasedByUserID != -1 )
+            {
+                cmd.Parameters.AddWithValue( "@ReleasedByUserID", releasedByUserID );
+            }
+            else
+            {
+                cmd.Parameters.AddWithValue( "@ReleasedByUserID", DBNull.Value );
+            }
+            if ( releaseApplicationID != -1 )
+            {
+                cmd.Parameters.AddWithValue( "@ReleaseApplicationID", releaseApplicationID );
+            }
+            else
+            {
+                cmd.Parameters.AddWithValue( "@ReleaseApplicationID", DBNull.Value );
+            }
             try
             {
                 connect.Open();

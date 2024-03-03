@@ -7,7 +7,7 @@ namespace DVLD
 {
     public partial class frmLogin : Form
     {
-        private string _UserCredentialsFile = "D:\\DVLD-User-Credintials\\user-credinitials.txt";
+        private string _UserCredentialsFile = "C:\\DVLD-User-Credintials\\user-credinitials.txt";
         private struct StCredentials
         {
             public int userID;

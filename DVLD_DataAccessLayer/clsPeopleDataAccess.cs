@@ -818,7 +818,7 @@ namespace DVLD_DataAccessLayer
         {
             int rowaAffected = 0;
             SqlConnection connection = new SqlConnection( DataAccesseSettings.DVLD_String );
-            string query = "DELETE FROM People WHERE PersonID = @id";
+            string query = "DELETE FROM People WHERE PersonID =@id";
 
             SqlCommand cmd = new SqlCommand( query, connection );
             cmd.Parameters.AddWithValue( "@id", id );
@@ -829,7 +829,6 @@ namespace DVLD_DataAccessLayer
             }
             catch ( System.Exception ex )
             {
-
                 return false;
             }
             finally
